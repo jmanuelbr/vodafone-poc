@@ -2,7 +2,11 @@ owner: jmanuelbr
 repo: vodafone-modernization-agent
 ref: main
 
-# Optional: set a default index
 index:
   path: /index
+
+paths:
+  /:
+    # default handler for HTML pages from markdown content
+    handler: html
 
