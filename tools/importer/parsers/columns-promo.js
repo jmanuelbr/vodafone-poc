@@ -4,78 +4,84 @@
 /**
  * Parser for columns-promo block
  *
- * Source: https://www.vodafone.es/c/particulares/es/
- * Base Block: columns
+ * Source: https://www.vodafone.es/c/particulares/es/productos-y-servicios/movil/contrato/tarifas-contrato/
+ * Base Block: columns-promo
  *
- * Block Structure (from markdown):
- * - Row 1: Block name header ("Columns-Promo")
- * - Row 2: [text content with heading, subtitle, CTA | promotional image] (2 columns)
+ * Block Structure:
+ * - Single row with 2 columns
+ * - Col 1: Image
+ * - Col 2: subtitle + title + description + CTA
  *
  * Source HTML Pattern:
- * section.ws10-m-text-image
- *   > div (content wrapper)
- *     > div (text column: heading h2/h3, paragraph, CTA link)
- *     > div (image column: picture > img)
+ * section.ws10-m-banner-slim.ws10-inverse
+ *   img.ws10-c-banner-slim__icon
+ *   p.ws10-c-banner-slim__title
+ *   div.ws10-c-pill (badge text)
+ *   span.ws10-c-banner-slim__text
+ *   a.ws10-c-button--secondary (CTA)
  *
- * Generated: 2026-02-11
+ * Generated: 2026-02-17
  */
 export default function parse(element, { document }) {
-  const cells = [];
+  // Extract image
+  const img = element.querySelector('.ws10-c-banner-slim__icon, img');
 
-  // Column 1: Text content (heading, subtitle, CTA)
-  const textCell = document.createElement('div');
+  // Extract title
+  const title = element.querySelector('.ws10-c-banner-slim__title, [class*="banner-slim__title"]');
 
-  // Heading
-  // VALIDATED: h2 found inside ws10-m-text-image in captured DOM
-  const heading = element.querySelector('h2, h3, h4');
-  if (heading) {
-    const h = document.createElement('h2');
-    h.textContent = heading.textContent.trim();
-    textCell.appendChild(h);
+  // Extract pill/badge text (subtitle)
+  const pill = element.querySelector('.ws10-c-pill, [class*="pill"]');
+
+  // Extract description text
+  const description = element.querySelector('.ws10-c-banner-slim__text, [class*="banner-slim__text"]');
+
+  // Extract CTA link
+  const ctaLink = element.querySelector('a[class*="button"]');
+
+  // Build image column
+  const imgCol = document.createElement('div');
+  if (img) {
+    const picture = document.createElement('picture');
+    const imgEl = document.createElement('img');
+    imgEl.src = img.src;
+    imgEl.alt = title ? title.textContent.trim() : '';
+    picture.appendChild(imgEl);
+    imgCol.appendChild(picture);
   }
 
-  // Subtitle/description paragraphs
-  // VALIDATED: p elements found in text-image module
-  const paragraphs = element.querySelectorAll('p');
-  paragraphs.forEach((p) => {
-    const text = p.textContent.trim();
-    if (text && !p.querySelector('a')) {
-      const para = document.createElement('p');
-      para.textContent = text;
-      textCell.appendChild(para);
-    }
-  });
+  // Build text column
+  const textCol = document.createElement('div');
 
-  // CTA link
-  // VALIDATED: a elements found in text-image module
-  const links = element.querySelectorAll('a');
-  if (links.length > 0) {
-    const ctaP = document.createElement('p');
-    links.forEach((link, i) => {
-      const text = link.textContent.trim();
-      const href = link.getAttribute('href') || '';
-      if (text && href) {
-        if (i > 0) ctaP.appendChild(document.createTextNode(' '));
-        const a = document.createElement('a');
-        a.href = href;
-        a.textContent = text;
-        ctaP.appendChild(a);
-      }
-    });
-    if (ctaP.childNodes.length > 0) textCell.appendChild(ctaP);
+  if (pill) {
+    const p = document.createElement('p');
+    p.textContent = pill.textContent.trim();
+    textCol.appendChild(p);
   }
 
-  // Column 2: Image
-  const imageCell = document.createElement('div');
-  const picture = element.querySelector('picture');
-  const img = element.querySelector('img');
-  if (picture) {
-    imageCell.appendChild(picture.cloneNode(true));
-  } else if (img) {
-    imageCell.appendChild(img.cloneNode(true));
+  if (title) {
+    const p = document.createElement('p');
+    const strong = document.createElement('strong');
+    strong.textContent = title.textContent.trim();
+    p.appendChild(strong);
+    textCol.appendChild(p);
   }
 
-  cells.push([textCell, imageCell]);
+  if (description) {
+    const p = document.createElement('p');
+    p.innerHTML = description.innerHTML;
+    textCol.appendChild(p);
+  }
+
+  if (ctaLink) {
+    const p = document.createElement('p');
+    const a = document.createElement('a');
+    a.href = ctaLink.href;
+    a.textContent = ctaLink.textContent.trim();
+    p.appendChild(a);
+    textCol.appendChild(p);
+  }
+
+  const cells = [[imgCol, textCol]];
 
   const block = WebImporter.Blocks.createBlock(document, { name: 'Columns-Promo', cells });
   element.replaceWith(block);

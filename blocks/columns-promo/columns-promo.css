@@ -42,26 +42,35 @@
   color: var(--color-white);
 }
 
-/* Subtitle (first paragraph) */
+/* Subtitle/pill (first paragraph) */
 .columns-promo > div > div:not(.columns-promo-img-col) p:first-child {
+  display: inline-block;
   font-size: 14px;
   font-weight: 400;
-  opacity: 0.9;
-  margin-bottom: 4px;
+  background-color: var(--color-teal);
+  padding: 4px 16px;
+  border-radius: 13px;
+  margin-bottom: 8px;
+  line-height: 18px;
 }
 
 /* Title (second paragraph with strong) */
 .columns-promo > div > div:not(.columns-promo-img-col) p:nth-child(2) {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.2;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
   margin-bottom: 8px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.columns-promo > div > div:not(.columns-promo-img-col) p:nth-child(2) strong {
+  font-weight: 700;
 }
 
 /* Description */
 .columns-promo > div > div:not(.columns-promo-img-col) p:nth-child(3) {
-  font-size: 16px;
-  line-height: 1.44;
+  font-size: 20px;
+  line-height: 28px;
   margin-bottom: 16px;
 }
 
@@ -70,12 +79,13 @@
   display: inline-block;
   background-color: var(--color-white);
   border: 2px solid var(--color-white);
-  color: var(--color-red);
+  color: var(--color-grey-5);
   padding: 8px 28px;
-  border-radius: 25px;
-  font-size: 16px;
+  border-radius: 100px;
+  font-size: 18px;
   font-weight: 400;
   text-decoration: none;
+  line-height: 26px;
   transition: background-color 0.2s, color 0.2s;
 }
 

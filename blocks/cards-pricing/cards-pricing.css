@@ -1,4 +1,4 @@
-/* Cards Pricing - Vodafone Pricing Cards */
+/* Cards Pricing - Vodafone Pricing Cards (ws10-m-card-rate-list) */
 
 .cards-pricing-wrapper {
   margin: 0;
@@ -24,11 +24,11 @@
   flex: 0 0 280px;
   scroll-snap-align: start;
   background-color: var(--color-white);
-  border-radius: 16px;
+  border-radius: 24px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--color-grey-1);
+  border: 1px solid #eee;
   transition: box-shadow 0.2s ease;
 }
 
@@ -36,118 +36,176 @@
   box-shadow: 0 4px 16px rgb(0 0 0 / 12%);
 }
 
-/* "Best seller" card highlight */
-.cards-pricing > ul > li:last-child {
-  border: 2px solid var(--color-red);
+/* Highlighted card ("La más vendida") - border moves to card-body */
+.cards-pricing > ul > li.highlighted {
+  border: none;
+  overflow: visible;
+  background-color: transparent;
 }
 
-/* Hide image column for pricing cards */
+.cards-pricing > ul > li.highlighted .cards-pricing-card-body {
+  border: 2px solid var(--color-red);
+  border-radius: 24px;
+  background-color: var(--color-white);
+}
+
+/* Highlight tab label */
+.cards-pricing .cards-pricing-highlight-tab {
+  display: inline-flex;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 4px 20px;
+  border-radius: 12px 12px 0 0;
+  margin-left: 20px;
+}
+
+/* Hide image column */
 .cards-pricing .cards-pricing-card-image {
   display: none;
 }
 
+/* Card body */
+/* stylelint-disable-next-line no-descending-specificity */
 .cards-pricing .cards-pricing-card-body {
   padding: 20px;
   display: flex;
   flex-direction: column;
   flex: 1;
+  gap: 20px;
 }
 
-/* Badge / Offer label (first paragraph with strong) */
-.cards-pricing .cards-pricing-card-body > p:first-child strong {
+/* Price box (grey background area) */
+.cards-pricing .cards-pricing-price-box {
+  background-color: var(--color-grey-1);
+  border-radius: 12px;
+  padding: 8px 20px;
+  min-height: 84px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.cards-pricing .cards-pricing-price-box > p {
+  margin: 0;
+}
+
+/* Badge line - only when price box has 3 paragraphs (badge + price + subtext) */
+.cards-pricing .cards-pricing-price-box > p:first-child:nth-last-child(3) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 4px;
+}
+
+/* Badge text ("Oferta exclusiva web") - plain red text, no pill */
+.cards-pricing .cards-pricing-price-box > p:first-child:nth-last-child(3) strong:first-child {
+  color: var(--color-red);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+/* Discount pill ("-16%", "-30%") - white bg, teal text */
+/* stylelint-disable-next-line no-descending-specificity */
+.cards-pricing .cards-pricing-price-box > p:first-child:nth-last-child(3) strong + strong {
   display: inline-block;
-  background-color: var(--color-red);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-teal);
   font-size: 14px;
   font-weight: 700;
   padding: 4px 16px;
-  border-radius: 20px;
+  border-radius: 13px;
 }
 
-/* Price display */
-.cards-pricing .cards-pricing-card-body > p:nth-child(2) {
-  margin: 12px 0 4px;
-  font-size: 16px;
-  color: var(--color-black);
-}
-
-.cards-pricing .cards-pricing-card-body > p:nth-child(2) strong {
-  font-size: 48px;
+/* Price paragraph - 2nd of 3 children (card with badge) */
+.cards-pricing .cards-pricing-price-box > p:nth-child(2):nth-last-child(2) {
+  font-size: 18px;
   font-weight: 700;
-  line-height: 1;
   color: var(--color-black);
-}
-
-/* Price subtitle (e.g., "Precio final" or "3 meses, luego 56€") */
-.cards-pricing .cards-pricing-card-body > p:nth-child(3) {
-  font-size: 14px;
-  color: var(--color-grey-3);
-  margin: 0 0 16px;
-}
-
-/* Feature list */
-.cards-pricing .cards-pricing-card-body ul {
-  list-style: none;
-  margin: 0 0 16px;
-  padding: 0;
-  flex: 1;
-}
-
-.cards-pricing .cards-pricing-card-body ul li {
-  position: relative;
-  padding: 8px 0;
-  padding-left: 24px;
-  font-size: 16px;
-  color: var(--color-grey-4);
-  line-height: 1.4;
-  border-bottom: 1px solid var(--color-grey-1);
-}
-
-.cards-pricing .cards-pricing-card-body ul li:last-child {
-  border-bottom: none;
-}
-
-.cards-pricing .cards-pricing-card-body ul li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 12px;
-  width: 14px;
-  height: 8px;
-  border-left: 2px solid var(--color-green);
-  border-bottom: 2px solid var(--color-green);
-  transform: rotate(-45deg);
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
-.cards-pricing .cards-pricing-card-body ul li strong {
+.cards-pricing .cards-pricing-price-box > p:nth-child(2):nth-last-child(2) strong {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 48px;
+  color: var(--color-black);
+  margin-right: 4px;
+}
+
+/* Price paragraph - 1st of 2 children (highlighted or no-badge cards) */
+.cards-pricing .cards-pricing-price-box > p:first-child:nth-last-child(2) {
+  font-size: 18px;
   font-weight: 700;
   color: var(--color-black);
 }
 
-/* "La más vendida" label */
-.cards-pricing .cards-pricing-card-body > p:first-child strong:only-child {
-  background-color: var(--color-teal);
+/* stylelint-disable-next-line no-descending-specificity */
+.cards-pricing .cards-pricing-price-box > p:first-child:nth-last-child(2) strong {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 48px;
+  color: var(--color-black);
+  margin-right: 4px;
+}
+
+/* Price subtext - always last in price box */
+/* stylelint-disable-next-line no-descending-specificity */
+.cards-pricing .cards-pricing-price-box > p:last-child {
+  font-size: 14px;
+  color: var(--color-black);
+}
+
+/* Feature list - no checkmarks, no borders */
+.cards-pricing .cards-pricing-card-body > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cards-pricing .cards-pricing-card-body > ul > li {
+  font-size: 20px;
+  color: var(--color-black);
+  line-height: 28px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.cards-pricing .cards-pricing-card-body > ul > li strong {
+  font-weight: 700;
+  color: var(--color-black);
 }
 
 /* CTA buttons (last paragraph) */
+/* stylelint-disable-next-line no-descending-specificity */
 .cards-pricing .cards-pricing-card-body > p:last-child {
   display: flex;
-  gap: 8px;
-  margin-top: auto;
-  padding-top: 16px;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .cards-pricing .cards-pricing-card-body > p:last-child a {
-  flex: 1;
-  display: inline-block;
-  padding: 8px 16px;
-  border-radius: 25px;
-  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 8px 32px;
+  border-radius: 100px;
+  font-size: 18px;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.2s, border-color 0.2s;
-  white-space: nowrap;
+  line-height: 26px;
+  box-sizing: border-box;
 }
 
 .cards-pricing .cards-pricing-card-body > p:last-child a:first-child {
@@ -156,6 +214,7 @@
   color: var(--color-black);
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .cards-pricing .cards-pricing-card-body > p:last-child a:last-child {
   background-color: var(--color-red);
   border: 2px solid var(--color-red);

@@ -1,0 +1,76 @@
+/* Accordion - Vodafone FAQ Style */
+
+.accordion details {
+  border: none;
+  border-bottom: 1px solid var(--color-grey-2);
+}
+
+.accordion details:first-child {
+  border-top: 1px solid var(--color-grey-2);
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.accordion details + details {
+  margin-top: 0;
+}
+
+.accordion details p {
+  margin-bottom: 0.8em;
+}
+
+.accordion details summary {
+  position: relative;
+  padding: 16px 0;
+  padding-right: 40px;
+  cursor: pointer;
+  list-style: none;
+  overflow: auto;
+  transition: color 0.2s;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--color-black);
+}
+
+.accordion details[open] summary {
+  background-color: transparent;
+}
+
+.accordion details summary:focus,
+.accordion details summary:hover {
+  background-color: transparent;
+  color: var(--color-red);
+}
+
+.accordion details summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion details summary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%) rotate(135deg);
+  width: 8px;
+  height: 8px;
+  border: 2px solid var(--color-black);
+  border-width: 2px 2px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.accordion details[open] summary::after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.accordion details .accordion-item-body {
+  padding: 0 0 16px;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--color-grey-4);
+}
+
+.accordion details[open] .accordion-item-body {
+  border-top: none;
+  background-color: transparent;
+}

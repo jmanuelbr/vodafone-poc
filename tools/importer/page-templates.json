@@ -120,6 +120,58 @@
           "section": "choose your plan cards"
         }
       ]
+    },
+    {
+      "name": "tarifas-contrato",
+      "urls": [
+        "https://www.vodafone.es/c/particulares/es/productos-y-servicios/movil/contrato/tarifas-contrato/"
+      ],
+      "description": "Vodafone mobile contract tariffs page with pricing cards, promo banner, feature strip, advantages carousel, comparison table, FAQ accordion, and SEO content sections",
+      "blocks": [
+        {
+          "name": "cards-pricing",
+          "instances": [
+            ".ws10-m-card-rate-list[data-ws10-module-id=\"1500308728693\"]"
+          ]
+        },
+        {
+          "name": "columns-promo",
+          "instances": [
+            "section.ws10-m-banner-slim.ws10-inverse"
+          ]
+        },
+        {
+          "name": "cards-feature",
+          "instances": [
+            "section.ws10-m-mobile-pdp-one[data-ws10-module-id=\"1500339253249\"]"
+          ]
+        },
+        {
+          "name": "cards",
+          "instances": [
+            "section.ws10-m-addons[data-ws10-module-id=\"1500319710242\"]"
+          ]
+        },
+        {
+          "name": "table",
+          "instances": [
+            ".ws10-m-new-table-comparative[data-ws10-module-id=\"1500293656261\"]"
+          ]
+        },
+        {
+          "name": "accordion",
+          "instances": [
+            "section.ws10-m-accordion[data-ws10-module-id=\"1500293701193\"]"
+          ]
+        },
+        {
+          "name": "columns",
+          "instances": [
+            "section.ws10-m-text-image[data-ws10-module-id=\"1500293698749\"]",
+            "section.ws10-m-text-image[data-ws10-module-id=\"1500387991002\"]"
+          ]
+        }
+      ]
     }
   ]
 }

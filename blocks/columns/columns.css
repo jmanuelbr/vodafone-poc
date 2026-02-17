@@ -1,3 +1,5 @@
+/* Columns - Vodafone SEO Text + Image */
+
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -5,6 +7,7 @@
 
 .columns img {
   width: 100%;
+  border-radius: 24px;
 }
 
 .columns > div > div {
@@ -19,15 +22,60 @@
   display: block;
 }
 
+/* Text column typography */
+.columns > div > div:not(.columns-img-col) h2 {
+  font-size: var(--heading-font-size-xl);
+  font-weight: 300;
+  line-height: 1.25;
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+
+.columns > div > div:not(.columns-img-col) h2 strong {
+  font-weight: 700;
+}
+
+.columns > div > div:not(.columns-img-col) p {
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--color-black);
+  margin: 0 0 16px;
+}
+
+.columns > div > div:not(.columns-img-col) ul {
+  margin: 0 0 16px;
+  padding-left: 20px;
+}
+
+.columns > div > div:not(.columns-img-col) ul li {
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--color-black);
+  margin-bottom: 8px;
+}
+
+.columns > div > div:not(.columns-img-col) a {
+  color: var(--color-red);
+  text-decoration: none;
+}
+
+.columns > div > div:not(.columns-img-col) a:hover {
+  text-decoration: underline;
+}
+
 @media (width >= 900px) {
   .columns > div {
-    align-items: center;
+    align-items: flex-start;
     flex-direction: unset;
-    gap: 24px;
+    gap: 40px;
   }
 
   .columns > div > div {
     flex: 1;
     order: unset;
+  }
+
+  .columns > div > .columns-img-col {
+    flex: 0 0 45%;
   }
 }
