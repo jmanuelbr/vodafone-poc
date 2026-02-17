@@ -4,9 +4,3 @@ ref: main
 
 index:
   path: /index
-
-paths:
-  /:
-    # default handler for HTML pages from markdown content
-    handler: html
-
