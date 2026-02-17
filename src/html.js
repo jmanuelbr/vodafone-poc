@@ -1,9 +1,9 @@
 export async function render(context) {
   const { content } = context;
 
-  // If there's markdown, convert it to HTML using the built-in pipeline
-  // In Helix 5, the default pipeline exposes `content.html` once transformed
+  // Fallbacks if pipeline didn't set html/title
   const body = content.html || '<p>No content</p>';
+  const title = content.title || 'Vodafone Modernization Agent';
 
   return {
     headers: {
@@ -13,7 +13,7 @@ export async function render(context) {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>${content.title || 'Vodafone Modernization Agent'}</title>
+  <title>${title}</title>
 </head>
 <body>
 ${body}
@@ -21,4 +21,3 @@ ${body}
 </html>`
   };
 }
-
