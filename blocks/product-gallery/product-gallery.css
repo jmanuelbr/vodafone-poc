@@ -166,7 +166,7 @@ main > .section > .product-gallery-wrapper {
 @media (width >= 900px) {
   .product-gallery-container {
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 600px 600px;
     gap: 0 40px;
     align-items: start;
     max-width: var(--container-max-width);
