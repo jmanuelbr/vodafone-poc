@@ -1,4 +1,4 @@
-/* Vodafone Header */
+/* Vodafone Header - Matching live site styles */
 
 header nav p {
   margin: 0;
@@ -10,37 +10,73 @@ header nav a:any-link {
   text-decoration: none;
 }
 
-/* Top bar - green phone banner */
+/* ========================================
+   Top bar - Dark segment navigation
+   (Particulares | Autónomos y Empresas | Ayuda)
+   ======================================== */
 header .nav-top-bar {
-  background-color: #008a00;
+  background-color: #222;
   color: var(--color-white);
   font-size: 14px;
-  padding: 8px 24px;
+  line-height: 1;
+}
+
+header .nav-top-bar .nav-top-bar-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 16px;
+  height: 26px;
+}
+
+header .nav-top-bar .nav-top-bar-segments {
+  display: flex;
+  align-items: center;
+  gap: 0;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
 header .nav-top-bar a {
   color: var(--color-white);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 4px 16px;
+  display: flex;
+  align-items: center;
+  height: 26px;
+  box-sizing: border-box;
+}
+
+header .nav-top-bar a:first-child {
+  padding-left: 0;
 }
 
 header .nav-top-bar a:hover {
   text-decoration: underline;
 }
 
-/* Nav wrapper */
+header .nav-top-bar a.active {
+  font-weight: 700;
+}
+
+header .nav-top-bar .nav-top-bar-help a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ========================================
+   Nav wrapper - Sticky with shadow
+   ======================================== */
 header .nav-wrapper {
   background-color: var(--color-white);
   width: 100%;
   z-index: 10;
   position: sticky;
   top: 0;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
 }
 
 header nav {
@@ -52,7 +88,7 @@ header nav {
   align-items: center;
   gap: 0 16px;
   margin: auto;
-  max-width: 1248px;
+  max-width: 1440px;
   height: var(--nav-height);
   padding: 0 16px;
   font-family: var(--body-font-family);
@@ -71,14 +107,17 @@ header nav[aria-expanded='true'] {
   header .nav-wrapper {
     position: sticky;
     top: 0;
+    box-shadow: 0 2px 8px -2px rgb(0 0 0 / 16%);
   }
 
   header nav {
     display: flex;
     justify-content: space-between;
-    gap: 0 24px;
-    max-width: 1264px;
-    padding: 0 32px;
+    align-items: center;
+    gap: 0;
+    max-width: 1440px;
+    padding: 0 16px;
+    height: 72px;
   }
 
   header nav[aria-expanded='true'] {
@@ -87,7 +126,9 @@ header nav[aria-expanded='true'] {
   }
 }
 
-/* hamburger */
+/* ========================================
+   Hamburger (mobile)
+   ======================================== */
 header nav .nav-hamburger {
   grid-area: hamburger;
   height: 22px;
@@ -169,10 +210,12 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   }
 }
 
-/* brand */
+/* ========================================
+   Brand / Logo
+   ======================================== */
 header .nav-brand {
   grid-area: brand;
-  flex-basis: 128px;
+  flex-shrink: 0;
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
@@ -189,21 +232,17 @@ header nav .nav-brand a {
   display: flex;
   align-items: center;
   gap: 8px;
+  padding: 8px 16px 8px 0;
 }
 
 header nav .nav-brand img {
-  width: 32px;
-  height: 32px;
+  width: auto;
+  height: 36px;
 }
 
-@media (width >= 900px) {
-  header nav .nav-brand img {
-    width: 48px;
-    height: 48px;
-  }
-}
-
-/* sections */
+/* ========================================
+   Sections / Nav items
+   ======================================== */
 header nav .nav-sections {
   grid-area: sections;
   flex: 1 1 auto;
@@ -224,8 +263,8 @@ header nav .nav-sections ul {
 }
 
 header nav .nav-sections ul > li {
-  font-weight: 700;
-  color: var(--color-black);
+  font-weight: 400;
+  color: #333;
 }
 
 header nav .nav-sections ul > li > ul {
@@ -257,9 +296,9 @@ header nav .nav-sections ul > li > ul > li {
     content: '';
     display: inline-block;
     position: absolute;
-    top: 0.5em;
+    top: 50%;
     right: 2px;
-    transform: rotate(135deg);
+    transform: translateY(-70%) rotate(135deg);
     width: 6px;
     height: 6px;
     border: 2px solid currentcolor;
@@ -268,21 +307,22 @@ header nav .nav-sections ul > li > ul > li {
   }
 
   header nav .nav-sections .nav-drop[aria-expanded='true']::after {
-    top: unset;
-    bottom: 0.5em;
-    transform: rotate(315deg);
+    transform: translateY(-30%) rotate(315deg);
   }
 
   header nav .nav-sections ul {
     display: flex;
-    gap: 24px;
+    gap: 0;
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
+    padding: 0 16px;
+    line-height: 72px;
+    cursor: pointer;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
@@ -295,13 +335,14 @@ header nav .nav-sections ul > li > ul > li {
     position: absolute;
     left: -24px;
     width: 220px;
-    top: 150%;
+    top: 100%;
     padding: 16px;
     background-color: var(--color-white);
     white-space: initial;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgb(0 0 0 / 12%);
     z-index: 10;
+    line-height: 1.4;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
@@ -321,7 +362,8 @@ header nav .nav-sections ul > li > ul > li {
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li a {
-    color: var(--color-grey-4);
+    color: #333;
+    font-size: 14px;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li a:hover {
@@ -329,18 +371,26 @@ header nav .nav-sections ul > li > ul > li {
   }
 }
 
-/* tools */
+/* ========================================
+   Tools - Soy cliente + ¿Te llamamos?
+   ======================================== */
 header nav .nav-tools {
   grid-area: tools;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 header .nav-tools ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-/* "Soy cliente" - red outlined pill button */
+/* "Soy cliente" - plain text link (not a pill button) */
 /* stylelint-disable-next-line no-descending-specificity */
 header nav .nav-tools a {
   display: inline-flex;
@@ -348,17 +398,37 @@ header nav .nav-tools a {
   justify-content: center;
   gap: 6px;
   font-size: 14px;
-  font-weight: 700;
-  color: var(--color-red);
-  border: 2px solid var(--color-red);
-  border-radius: 100px;
-  padding: 8px 24px;
+  font-weight: 400;
+  color: #333;
   text-decoration: none;
-  transition: background-color 0.2s, color 0.2s;
   white-space: nowrap;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  transition: color 0.2s;
 }
 
 header nav .nav-tools a:hover {
-  background-color: var(--color-red);
+  color: var(--color-red);
+  text-decoration: underline;
+}
+
+/* "¿Te llamamos?" - green pill CTA button */
+header nav .nav-tools a.nav-cta-llamamos {
+  background-color: var(--color-green, #008a00);
   color: var(--color-white);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--color-green, #008a00);
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+header nav .nav-tools a.nav-cta-llamamos:hover {
+  background-color: #006e00;
+  border-color: #006e00;
+  color: var(--color-white);
+  text-decoration: none;
 }

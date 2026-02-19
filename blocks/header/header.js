@@ -109,14 +109,21 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
 }
 
 /**
- * Creates the green top bar with phone number
+ * Creates the dark top bar with segment navigation
+ * (Particulares | Autónomos y Empresas | Ayuda)
  */
 function buildTopBar() {
   const topBar = document.createElement('div');
   topBar.className = 'nav-top-bar';
-  topBar.innerHTML = `<span>Llama gratis al <a href="tel:900921187"><strong>900921187</strong></a></span>
-    <span>|</span>
-    <a href="https://www.vodafone.es/c/particulares/es/te-llamamos/">Te llamamos</a>`;
+  topBar.innerHTML = `<div class="nav-top-bar-content">
+    <div class="nav-top-bar-segments">
+      <a href="https://www.vodafone.es/c/particulares/es/">Particulares</a>
+      <a href="https://www.vodafone.es/c/empresas/autonomos/es/" class="active">Autónomos y Empresas</a>
+    </div>
+    <div class="nav-top-bar-help">
+      <a href="https://ayudacliente.vodafone.es/autonomos/temas-de-ayuda/">Ayuda</a>
+    </div>
+  </div>`;
   return topBar;
 }
 
@@ -172,13 +179,20 @@ export default async function decorate(block) {
     });
   }
 
-  // Remove button classes from tools links
+  // Remove button classes from tools links and style "Te llamamos" CTA
   const navTools = nav.querySelector('.nav-tools');
   if (navTools) {
     navTools.querySelectorAll('.button').forEach((button) => {
       button.className = '';
       const buttonContainer = button.closest('.button-container');
       if (buttonContainer) buttonContainer.className = '';
+    });
+
+    // Mark the "Te llamamos" link with a special class
+    navTools.querySelectorAll('a').forEach((link) => {
+      if (link.textContent.includes('llamamos')) {
+        link.classList.add('nav-cta-llamamos');
+      }
     });
   }
 
