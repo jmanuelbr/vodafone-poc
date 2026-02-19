@@ -7,7 +7,7 @@ export default function decorate(block) {
     const isActive = meta === 'active';
     tabs.push({
       label,
-      content: isActive ? '' : (cols[1]?.innerHTML || ''),
+      contentEl: cols[1],
       isActive,
     });
   });
@@ -47,13 +47,35 @@ export default function decorate(block) {
 
   tabContent.forEach((el) => el.classList.add('customer-tab-content', 'customer-tab-0'));
 
-  // Create placeholder for tab 1 (Ya soy cliente)
+  // Create placeholder for tab 1 (Ya soy cliente) with red gradient card
   const placeholder = document.createElement('div');
   placeholder.className = 'customer-tab-content customer-tab-1';
   placeholder.style.display = 'none';
-  placeholder.innerHTML = tabs[1]?.content
-    ? `<div class="customer-tabs-placeholder">${tabs[1].content}</div>`
-    : '<div class="customer-tabs-placeholder"><p>Accede a Mi Vodafone.</p></div>';
+
+  const card = document.createElement('div');
+  card.className = 'customer-tabs-client-card';
+
+  const contentEl = tabs[1]?.contentEl;
+  if (contentEl) {
+    // Extract text (everything except the link)
+    const link = contentEl.querySelector('a');
+    const textContent = contentEl.textContent.replace(link?.textContent || '', '').trim();
+
+    const text = document.createElement('p');
+    text.className = 'customer-tabs-client-text';
+    text.textContent = textContent;
+    card.append(text);
+
+    if (link) {
+      const btn = document.createElement('a');
+      btn.className = 'customer-tabs-client-btn';
+      btn.href = link.href;
+      btn.textContent = link.textContent.trim();
+      card.append(btn);
+    }
+  }
+
+  placeholder.append(card);
 
   const insertAfter = tabContent.length > 0 ? tabContent[tabContent.length - 1] : wrapper;
   insertAfter.after(placeholder);
