@@ -8,7 +8,8 @@ main > .section > .tariff-filter-wrapper {
 .tariff-filter-bar {
   display: flex;
   gap: 12px;
-  justify-content: center;
+  justify-content: left;
+  height: 54px;
 }
 
 .tariff-filter-btn {
@@ -30,7 +31,7 @@ main > .section > .tariff-filter-wrapper {
 .tariff-filter-btn.active {
   background: var(--color-teal, #00697c);
   color: var(--color-white, #fff);
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .tariff-filter-btn:hover:not(.active) {

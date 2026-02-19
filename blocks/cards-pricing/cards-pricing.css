@@ -61,7 +61,10 @@
   line-height: 18px;
   padding: 4px 20px;
   border-radius: 12px 12px 0 0;
-  margin-left: 20px;
+  margin-left: 45px;
+  margin-right: 45px;
+  justify-content: center;
+  font-weight: 400;
 }
 
 /* Highlighted card ("La más vendida") - border moves to card-body */
@@ -91,6 +94,9 @@
   line-height: 18px;
   padding: 4px 20px;
   border-radius: 12px 12px 0 0;
+  margin-left: 58px;
+  margin-right: 58px;
+  font-weight: 400;
 }
 
 /* Hide image column */
