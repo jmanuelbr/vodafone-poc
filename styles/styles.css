@@ -404,3 +404,43 @@ main .section.red h4,
 main .section.red p {
   color: var(--color-white);
 }
+
+/* ========================================
+   Benefits icon list (PDP top)
+   ======================================== */
+main .default-content-wrapper > ul:has(.icon) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 16px;
+  gap: 32px;
+}
+
+main .default-content-wrapper > ul:has(.icon) > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: var(--body-font-family);
+  font-size: .875rem;
+  font-weight: 700;
+  color: var(--color-grey-3);
+  line-height: 26px;
+  max-width: 200px;
+}
+
+main .default-content-wrapper > ul:has(.icon) > li .icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 8px;
+}
+
+main .default-content-wrapper > ul:has(.icon) > li .icon img {
+  width: 24px;
+  height: 24px;
+  filter: invert(50%);
+}

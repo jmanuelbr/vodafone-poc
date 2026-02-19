@@ -76,6 +76,39 @@ function buildAutoBlocks(main) {
 }
 
 /**
+ * Converts :icon-name: text patterns to <span class="icon icon-name"></span>.
+ * This replicates the server-side EDS pipeline icon conversion for local dev.
+ * @param {Element} element The container element
+ */
+function decorateIconText(element) {
+  const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+  const iconPattern = /:([\w-]+):/g;
+  const nodes = [];
+  let node = walker.nextNode();
+  while (node) {
+    if (iconPattern.test(node.textContent)) {
+      nodes.push(node);
+    }
+    iconPattern.lastIndex = 0;
+    node = walker.nextNode();
+  }
+  nodes.forEach((textNode) => {
+    const fragment = document.createDocumentFragment();
+    const parts = textNode.textContent.split(iconPattern);
+    for (let i = 0; i < parts.length; i += 1) {
+      if (i % 2 === 0) {
+        if (parts[i]) fragment.appendChild(document.createTextNode(parts[i]));
+      } else {
+        const span = document.createElement('span');
+        span.classList.add('icon', `icon-${parts[i]}`);
+        fragment.appendChild(span);
+      }
+    }
+    textNode.parentNode.replaceChild(fragment, textNode);
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -83,6 +116,7 @@ function buildAutoBlocks(main) {
 export function decorateMain(main) {
   // hopefully forward compatible button decoration
   decorateButtons(main);
+  decorateIconText(main);
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);

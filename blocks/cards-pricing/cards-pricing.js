@@ -173,12 +173,17 @@ export default function decorate(block) {
           }
         });
 
-        // Detect "Tarifa recomendada" badge and mark card
+        // Detect "Tarifa recomendada" badge and mark card with tab
         const badgeP = priceBox.querySelector('.cards-pricing-badge');
         if (badgeP) {
           const badgeStrong = badgeP.querySelector('strong:first-child');
           if (badgeStrong && /recomendada/i.test(badgeStrong.textContent)) {
             li.classList.add('recommended');
+            const tab = document.createElement('div');
+            tab.className = 'cards-pricing-recommend-tab';
+            tab.textContent = badgeStrong.textContent.trim();
+            li.prepend(tab);
+            badgeP.remove();
           }
         }
 
