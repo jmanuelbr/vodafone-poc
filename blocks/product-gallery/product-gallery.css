@@ -10,7 +10,8 @@ main > .section > .product-gallery-wrapper {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  max-width: 453px;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 /* Main product image */
@@ -81,16 +82,96 @@ main > .section > .product-gallery-wrapper {
   object-fit: contain;
 }
 
+/* Benefits bar - icon + text row */
+.product-gallery-container > .default-content-wrapper > ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.product-gallery-container > .default-content-wrapper > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 120px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-grey-3, #7e7e7e);
+  line-height: 1.4;
+}
+
+.product-gallery-container > .default-content-wrapper > ul > li .icon {
+  margin-bottom: 12px;
+  width: 24px;
+  height: 24px;
+  color: var(--color-grey-3, #7e7e7e);
+}
+
+.product-gallery-container > .default-content-wrapper > ul > li .icon img {
+  width: 24px;
+  height: 24px;
+  filter: invert(52%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(80%);
+}
+
+/* Discount pill badge */
+.product-gallery-container > .default-content-wrapper > ul + p {
+  margin: 0 0 8px;
+}
+
+.product-gallery-container > .default-content-wrapper > ul + p > em {
+  display: inline-block;
+  background-color: var(--color-teal, #00697c);
+  color: var(--color-white);
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 4px 16px;
+  border-radius: 13px;
+}
+
+/* PDP title and price styling */
+.product-gallery-container h1 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--heading-font-size-xxl);
+  line-height: 1.2;
+  margin: 0 0 4px;
+}
+
+/* PDP h2 headings */
+.product-gallery-container h2 {
+  font-size: 28px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+.product-gallery-container > .default-content-wrapper p {
+  color: var(--color-black);
+  font-size: var(--body-font-size-m);
+  font-weight: 400;
+  line-height: 1.44;
+  margin: 0 0 8px;
+}
+
+.product-gallery-container > .default-content-wrapper del {
+  color: var(--color-teal, #00697c);
+}
+
 /* Section-level 2-column PDP layout */
 @media (width >= 900px) {
   .product-gallery-container {
     display: grid;
-    grid-template-columns: minmax(auto, 480px) 1fr;
+    grid-template-columns: min(35vw, 480px) 1fr;
     gap: 0 40px;
     align-items: start;
     max-width: var(--container-max-width);
     margin: 0 auto;
-    padding: var(--container-padding);
+    padding: 40px 32px 0;
   }
 
   /* Override EDS default wrapper styles within PDP grid */
@@ -112,5 +193,6 @@ main > .section > .product-gallery-wrapper {
   /* All other content flows in right column */
   .product-gallery-container > *:not(.product-gallery-wrapper) {
     grid-column: 2;
+    min-width: 0;
   }
 }

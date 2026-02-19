@@ -94,15 +94,8 @@
   line-height: 22px;
 }
 
-/* Badge text in price box (e.g., "Tarifa exclusiva web", "La recomendada") */
-.cards-pricing .cards-pricing-price-box > p:first-child > strong:only-child {
-  color: var(--color-red);
-  font-size: 14px;
-  font-weight: 700;
-}
-
-/* Badge line - only when price box has 3 paragraphs (badge + price + subtext) */
-.cards-pricing .cards-pricing-price-box > p:first-child:nth-last-child(3) {
+/* Badge line (e.g., "Tarifa recomendada", "Oferta exclusiva web -16%") */
+.cards-pricing .cards-pricing-price-box > p.cards-pricing-badge {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,8 +105,9 @@
   margin-bottom: 4px;
 }
 
-/* Badge text ("Oferta exclusiva web") - plain red text, no pill */
-.cards-pricing .cards-pricing-price-box > p:first-child:nth-last-child(3) strong:first-child {
+/* Badge text - red */
+/* stylelint-disable-next-line no-descending-specificity */
+.cards-pricing .cards-pricing-price-box > p.cards-pricing-badge strong:first-child {
   color: var(--color-red);
   font-size: 14px;
   font-weight: 700;
@@ -122,7 +116,7 @@
 
 /* Discount pill ("-16%", "-30%") - white bg, teal text */
 /* stylelint-disable-next-line no-descending-specificity */
-.cards-pricing .cards-pricing-price-box > p:first-child:nth-last-child(3) strong + strong {
+.cards-pricing .cards-pricing-price-box > p.cards-pricing-badge strong:nth-child(2) {
   display: inline-block;
   background-color: var(--color-white);
   color: var(--color-teal);
@@ -132,46 +126,15 @@
   border-radius: 13px;
 }
 
-/* Price paragraph - 2nd of 3 children (card with badge) */
-.cards-pricing .cards-pricing-price-box > p:nth-child(2):nth-last-child(2) {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--color-black);
-}
-
+/* Single-strong badge (no discount pill) - just red text */
 /* stylelint-disable-next-line no-descending-specificity */
-.cards-pricing .cards-pricing-price-box > p:nth-child(2):nth-last-child(2) strong {
-  font-size: 64px;
-  font-weight: 800;
-  line-height: 48px;
-  color: var(--color-black);
-  margin-right: 4px;
-}
-
-/* Price paragraph - 1st of 2 children (highlighted or no-badge cards) */
-.cards-pricing .cards-pricing-price-box > p:first-child:nth-last-child(2) {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--color-black);
-}
-
-/* stylelint-disable-next-line no-descending-specificity */
-.cards-pricing .cards-pricing-price-box > p:first-child:nth-last-child(2) strong {
-  font-size: 64px;
-  font-weight: 800;
-  line-height: 48px;
-  color: var(--color-black);
-  margin-right: 4px;
-}
-
-/* Price subtext - always last in price box */
-/* stylelint-disable-next-line no-descending-specificity */
-.cards-pricing .cards-pricing-price-box > p:last-child {
+.cards-pricing .cards-pricing-price-box > p.cards-pricing-badge > strong:only-child {
+  color: var(--color-red);
   font-size: 14px;
-  color: var(--color-black);
+  font-weight: 700;
 }
 
-/* Amount paragraph (any position) - used for PDP cards with varied structure */
+/* Price amount (e.g., "17,36 €/mes") */
 /* stylelint-disable-next-line no-descending-specificity */
 .cards-pricing .cards-pricing-price-box > p.cards-pricing-amount {
   font-size: 18px;
@@ -186,6 +149,13 @@
   line-height: 48px;
   color: var(--color-black);
   margin-right: 4px;
+}
+
+/* Price subtext (e.g., "Precio final", "Precio final. Antes 31€ (IVA incl.)") */
+/* stylelint-disable-next-line no-descending-specificity */
+.cards-pricing .cards-pricing-price-box > p:not([class]) {
+  font-size: 14px;
+  color: var(--color-black);
 }
 
 /* Features paragraph (dash-separated items in PDP cards) */
@@ -219,61 +189,61 @@
   color: var(--color-black);
 }
 
-/* CTA buttons (last paragraph) */
+/* CTA buttons (last paragraph) - row layout: Más info left, Seleccionar right */
 /* stylelint-disable-next-line no-descending-specificity */
 .cards-pricing .cards-pricing-card-body > p:last-child {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
   margin: 0;
+  margin-top: auto;
 }
 
+/* "Más info" - underlined text link, left-aligned */
 /* stylelint-disable-next-line no-descending-specificity */
-.cards-pricing .cards-pricing-card-body > p:last-child a {
-  display: block;
-  width: 100%;
-  padding: 8px 32px;
-  border-radius: 100px;
-  font-size: 18px;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.2s, border-color 0.2s;
-  line-height: 26px;
-  box-sizing: border-box;
-}
-
 .cards-pricing .cards-pricing-card-body > p:last-child a:first-child {
-  background-color: transparent;
-  border: 2px solid var(--color-black);
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
   color: var(--color-black);
-}
-
-/* stylelint-disable-next-line no-descending-specificity */
-.cards-pricing .cards-pricing-card-body > p:last-child a:last-child {
-  background-color: var(--color-red);
-  border: 2px solid var(--color-red);
-  color: var(--color-white);
+  text-decoration: underline;
+  cursor: pointer;
+  line-height: 22px;
 }
 
 .cards-pricing .cards-pricing-card-body > p:last-child a:first-child:hover {
-  background-color: var(--color-black);
+  color: var(--color-teal, #00697c);
+}
+
+/* "Seleccionar" - teal pill button, right-aligned */
+/* stylelint-disable-next-line no-descending-specificity */
+.cards-pricing .cards-pricing-card-body > p:last-child a:last-child {
+  display: inline-flex;
+  padding: 8px 24px;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s;
+  line-height: 22px;
+  box-sizing: border-box;
+  background-color: var(--color-teal, #00697c);
+  border: 2px solid var(--color-teal, #00697c);
   color: var(--color-white);
 }
 
 .cards-pricing .cards-pricing-card-body > p:last-child a:last-child:hover {
-  background-color: var(--color-red-hover);
-  border-color: var(--color-red-hover);
+  background-color: var(--color-teal-hover, #005566);
+  border-color: var(--color-teal-hover, #005566);
 }
 
 @media (width >= 900px) {
-  .cards-pricing > ul {
-    overflow: visible;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-
   .cards-pricing > ul > li {
-    flex: 1;
-    max-width: 300px;
+    flex: 0 0 220px;
   }
 }

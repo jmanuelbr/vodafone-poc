@@ -1,0 +1,388 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - banner:
+              - generic [ref=e5]:
+                - link "Ir a la pagina principal de vodafone.es Logotipo Vodafone Business - Ir al inicio" [ref=e7] [cursor=pointer]:
+                  - /url: https://www.vodafone.es/c/empresas/autonomos/es/
+                  - generic [ref=e8]: Ir a la pagina principal de vodafone.es
+                  - img "Logotipo Vodafone Business - Ir al inicio" [ref=e9]
+                - navigation "Menu navegación Segmento" [ref=e10]:
+                  - heading "Menu navegación Segmento" [level=2] [ref=e11]
+                  - menuitem "Autónomos y Negocios" [ref=e12] [cursor=pointer]:
+                    - generic [ref=e13]: Autónomos y Negocios
+                  - menu "Menus de segmentación para empresas y autónomos":
+                    - menuitem "Pymes" [ref=e14] [cursor=pointer]
+                    - menuitem "Grandes empresas y AA.PP." [ref=e15] [cursor=pointer]
+                    - menuitem "Particulares" [ref=e16] [cursor=pointer]
+                - generic [ref=e17]:
+                  - button "Este botón abre una compra comenzada con anterioridad en vodafone.es" [ref=e22]:
+                    - generic [ref=e23]: Este botón abre una compra comenzada con anterioridad en vodafone.es
+                    - img [ref=e24]
+                  - button "Abrir buscador. Abre en ventana modal" [ref=e28] [cursor=pointer]:
+                    - generic [ref=e29]: Abrir buscador. Abre en ventana modal
+                    - img [ref=e30]
+                  - menuitem "Soy cliente Ir a la pagina acceso clientes" [ref=e32] [cursor=pointer]:
+                    - img [ref=e33]
+                    - generic: Soy cliente
+                    - generic [ref=e35]: Ir a la pagina acceso clientes
+                - navigation "Menu navegación principal. Para dispositivos móviles" [ref=e36]:
+                  - heading "Menu navegación principal. Para dispositivos móviles" [level=2] [ref=e37]
+                  - menuitem "Abre el menú lateral" [ref=e38] [cursor=pointer]:
+                    - img [ref=e39]
+                    - generic [ref=e42]: Abre el menú lateral
+                  - generic [ref=e43]:
+                    - menu [ref=e45]:
+                      - menuitem "Fibra y Móvil" [ref=e46] [cursor=pointer]
+                      - menu:
+                        - menuitem "Tarifas Fibra y Móvil" [ref=e47] [cursor=pointer]
+                        - menuitem "Configura tu tarifa" [ref=e48] [cursor=pointer]
+                        - menuitem "Televisión" [ref=e49] [cursor=pointer]
+                      - menuitem "Móvil" [ref=e50] [cursor=pointer]
+                      - menu:
+                        - menuitem "Tarifas de Móvil" [ref=e51] [cursor=pointer]
+                        - menuitem "Líneas adicionales" [ref=e52] [cursor=pointer]
+                      - menuitem "Fibra" [ref=e53] [cursor=pointer]
+                      - menu:
+                        - menuitem "Tarifas de Fibra óptica" [ref=e54] [cursor=pointer]
+                        - menuitem "Cobertura de Fibra" [ref=e55] [cursor=pointer]
+                        - menuitem "Teléfono fijo" [ref=e56] [cursor=pointer]
+                        - menuitem "Segundas Fibras" [ref=e57] [cursor=pointer]
+                      - menuitem "TV Fútbol Bar" [ref=e58] [cursor=pointer]
+                      - menuitem "Móviles y dispositivos" [ref=e59] [cursor=pointer]
+                      - menu:
+                        - menuitem "Catálogo de móviles" [ref=e60] [cursor=pointer]
+                        - menuitem "Ordenadores" [ref=e61] [cursor=pointer]
+                        - menuitem "Ver todos" [ref=e62] [cursor=pointer]
+                      - menuitem "Servicios para tu negocio" [ref=e63] [cursor=pointer]
+                      - menu:
+                        - menuitem "Servicios profesionales" [ref=e64] [cursor=pointer]
+                        - menuitem "Por ser cliente" [ref=e65] [cursor=pointer]
+                        - menuitem "Transformación Digital" [ref=e66] [cursor=pointer]
+                    - link "Ayuda" [ref=e68] [cursor=pointer]:
+                      - /url: https://ayudacliente.vodafone.es/autonomos/temas-de-ayuda/
+                      - img [ref=e69]
+                      - text: Ayuda
+    - generic [ref=e374]:
+      - generic [ref=e377]:
+        - navigation "Navegación" [ref=e380]:
+          - list [ref=e381]:
+            - listitem [ref=e382]:
+              - link "Inicio" [ref=e383] [cursor=pointer]:
+                - /url: https://www.vodafone.es/c/empresas/autonomos/es/
+            - listitem [ref=e384]:
+              - link "Dispositivos" [ref=e385] [cursor=pointer]:
+                - /url: https://www.vodafone.es/c/tienda-online/autonomos/catalogo/
+            - listitem [ref=e386]:
+              - link "Móviles" [ref=e387] [cursor=pointer]:
+                - /url: https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/
+            - listitem [ref=e388]:
+              - link "Xiaomi" [ref=e389] [cursor=pointer]:
+                - /url: https://www.vodafone.es/c/tienda-online/autonomos/catalogo-xiaomi/
+            - listitem [ref=e390]:
+              - link "Xiaomi Redmi Note 15 Pro 5G Negro 256GB":
+                - /url: https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-note-15-pro-5g-negro-256gb-316376/
+        - region [ref=e395]:
+          - heading [level=3] [ref=e396]
+          - generic [ref=e397]:
+            - list [ref=e398]:
+              - listitem [ref=e399] [cursor=pointer]:
+                - img "Redmi Note 15 Pro 5G" [ref=e400]
+              - listitem [ref=e401] [cursor=pointer]:
+                - img [ref=e402]
+              - listitem [ref=e403] [cursor=pointer]:
+                - img [ref=e404]
+              - listitem [ref=e405] [cursor=pointer]:
+                - img [ref=e406]
+            - list [ref=e409]:
+              - listitem [ref=e410]:
+                - button "Redmi Note 15 Pro 5G Imagen seleccionada" [ref=e411] [cursor=pointer]:
+                  - img "Redmi Note 15 Pro 5G" [ref=e412]
+                  - generic [ref=e413]: Imagen seleccionada
+              - listitem [ref=e414]:
+                - button "Redmi Note 15 Pro 5G" [ref=e415] [cursor=pointer]:
+                  - img "Redmi Note 15 Pro 5G" [ref=e416]
+              - listitem [ref=e417]:
+                - button "Redmi Note 15 Pro 5G" [ref=e418] [cursor=pointer]:
+                  - img "Redmi Note 15 Pro 5G" [ref=e419]
+              - listitem [ref=e420]:
+                - button "Redmi Note 15 Pro 5G" [ref=e421] [cursor=pointer]:
+                  - img "Redmi Note 15 Pro 5G" [ref=e422]
+        - generic [ref=e423]:
+          - list [ref=e426]:
+            - listitem [ref=e427]:
+              - img "Pago a plazos sin intereses" [ref=e429]
+              - paragraph [ref=e431]: Pago a plazos sin intereses
+            - listitem [ref=e432]:
+              - img "Trae tu móvil y ahorra" [ref=e434]
+              - paragraph [ref=e436]: Trae tu móvil y ahorra
+            - listitem [ref=e437] [cursor=pointer]:
+              - img "Ver todos los beneficios" [ref=e439]
+              - paragraph [ref=e441]: Ver todos los beneficios
+          - generic [ref=e444]: "Descuento especial: hasta -63% de dto."
+          - heading "Xiaomi Redmi Note 15 Pro 5G 256GB Negro" [level=1] [ref=e447]:
+            - text: Xiaomi
+            - strong [ref=e448]: Redmi Note 15 Pro 5G
+            - text: 256GB Negro
+          - generic [ref=e450]:
+            - text: desde 208,26€
+            - deletion [ref=e451]: 329,75€
+            - text: o 4,13€/mes x36 meses + Tarifa Móvil
+          - button "Precios sin IVA" [ref=e455] [cursor=pointer]
+          - heading "¿Con qué tarifa quieres comprar tu Smartphone?" [level=3] [ref=e466]
+          - region [ref=e473]:
+            - list [ref=e474]:
+              - listitem "1 de 2" [ref=e475]:
+                - link "No soy cliente" [ref=e476] [cursor=pointer]:
+                  - /url: "#"
+              - listitem "2 de 2" [ref=e477]:
+                - link "Ya soy cliente" [ref=e478] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=e481]:
+            - generic [ref=e482]:
+              - checkbox "Tarifas Móvil Tarifas Móvil" [checked] [ref=e483]:
+                - generic [ref=e484] [cursor=pointer]:
+                  - img "Tarifas Móvil" [ref=e486]
+                  - generic [ref=e488]: Tarifas Móvil
+              - checkbox "Tarifas Fibra y Móvil Tarifas Fibra y Móvil" [ref=e489]:
+                - generic [ref=e490] [cursor=pointer]:
+                  - img "Tarifas Fibra y Móvil" [ref=e492]
+                  - generic [ref=e494]: Tarifas Fibra y Móvil
+            - generic [ref=e497]:
+              - list [ref=e499]:
+                - listitem [ref=e500]:
+                  - generic [ref=e503]:
+                    - generic [ref=e504]: Tarifa recomendada
+                    - generic [ref=e507]:
+                      - generic [ref=e508]:
+                        - generic [ref=e512]:
+                          - paragraph [ref=e514]: "17"
+                          - generic [ref=e515]:
+                            - paragraph [ref=e516]: ",36 €/mes"
+                            - paragraph [ref=e518]: Precio final
+                        - list [ref=e520]:
+                          - listitem [ref=e521]:
+                            - paragraph [ref=e525]: Línea móvil Ilimitada
+                          - listitem [ref=e526]:
+                            - paragraph [ref=e530]: Primeros 160GB a velocidad 5G
+                          - listitem [ref=e531]:
+                            - paragraph [ref=e535]: Sin permanencia
+                      - generic [ref=e537]:
+                        - generic [ref=e542] [cursor=pointer]: Más info
+                        - button "Seleccionado Seleccionado" [ref=e546] [cursor=pointer]:
+                          - generic [ref=e547]: Seleccionado
+                          - generic [ref=e549]: Seleccionado
+              - generic [ref=e550] [cursor=pointer]:
+                - generic [ref=e551]: iconTitle
+                - img [ref=e553]
+                - generic [ref=e555]: Ver más tarifas
+          - generic [ref=e556]:
+            - heading "¿Cómo quieres pagar?" [level=2] [ref=e558]
+            - generic [ref=e560]:
+              - generic [ref=e561]:
+                - generic [ref=e562]:
+                  - radio "A plazos" [checked] [ref=e563]
+                  - generic [ref=e564] [cursor=pointer]:
+                    - generic: A plazos
+                - generic [ref=e565]:
+                  - radio "Al contado" [ref=e566]
+                  - generic [ref=e567] [cursor=pointer]:
+                    - generic: Al contado
+              - region [ref=e570]:
+                - list [ref=e571]:
+                  - listitem "1 de 2" [ref=e572]:
+                    - checkbox "En 24 meses" [ref=e573]:
+                      - radio "En 24 meses"
+                      - generic [ref=e575] [cursor=pointer]: En 24 meses
+                  - listitem "2 de 2" [ref=e576]:
+                    - checkbox "En 36 meses" [checked] [ref=e577]:
+                      - radio "En 36 meses" [checked]
+                      - generic [ref=e579] [cursor=pointer]: En 36 meses
+              - generic [ref=e580]:
+                - generic [ref=e581]:
+                  - radio "7€/mes +0€ pago inicial +3,25€ canon digital" [ref=e582]
+                  - generic [ref=e584] [cursor=pointer]:
+                    - paragraph [ref=e585]: 7€/mes
+                    - paragraph [ref=e586]: +0€ pago inicial
+                    - text: +3,25€ canon digital
+                - generic [ref=e587]:
+                  - radio "5€/mes +72€ pago inicial +3,25€ canon digital" [checked] [ref=e588]
+                  - generic [ref=e590] [cursor=pointer]:
+                    - paragraph [ref=e591]: 5€/mes
+                    - paragraph [ref=e592]: +72€ pago inicial
+                    - text: +3,25€ canon digital
+                - generic [ref=e593]:
+                  - heading "¿Cómo funciona el pago a plazos de Vodafone?" [level=2] [ref=e594]
+                  - list [ref=e598]:
+                    - listitem [ref=e599]:
+                      - img "Realiza tu pedido" [ref=e601]
+                      - paragraph [ref=e603]: Realiza tu pedido
+                    - listitem [ref=e604]:
+                      - img "Recibirás tu SIM en 2-4 días" [ref=e606]
+                      - paragraph [ref=e608]: Recibirás tu SIM en 2-4 días y activaremos tu línea lo antes posible
+                    - listitem [ref=e609]:
+                      - img "Accede a tu app" [ref=e611]
+                      - paragraph [ref=e613]: Accede a tu espacio personal en la app. Tu dispositivo estará esperando
+                    - listitem [ref=e614]:
+                      - img "Confirma la compra" [ref=e616]
+                      - paragraph [ref=e618]: Confirma la compra y recíbelo
+          - generic [ref=e619]:
+            - heading "Resumen de tu pedido" [level=2] [ref=e620]
+            - generic [ref=e622]:
+              - generic [ref=e624]:
+                - generic [ref=e625]:
+                  - img [ref=e628]
+                  - generic [ref=e630]:
+                    - generic [ref=e631]:
+                      - generic [ref=e632]: Tarifa Móvil
+                      - generic [ref=e633]: 17,36€/mes
+                    - paragraph [ref=e635]: Sin Permanencia
+                - alert [ref=e637]:
+                  - img [ref=e640]
+                  - generic [ref=e642]: Finaliza tu pedido ahora y no te cobraremos la tarifa móvil hasta que tu línea quede activada ni el dispositivo hasta que confirmemos su envío. Recuerda que está sujeto a stock y aprobación crediticia
+              - generic [ref=e644]:
+                - generic [ref=e645]:
+                  - generic [ref=e646]: Cuota mensual
+                  - generic [ref=e647]: 17,36€/mes
+                - button "add_cart_button Lo quiero" [ref=e651] [cursor=pointer]:
+                  - generic [ref=e652]: add_cart_button
+                  - generic [ref=e654]: Lo quiero
+          - generic [ref=e657]:
+            - paragraph [ref=e658]: Somos transparentes, sin riesgos y sin permanencia
+            - generic [ref=e659]:
+              - paragraph [ref=e660]: Estamos convencidos de que nuestras ofertas son las mejores para ti. Por eso nuestras tarifas móviles no tienen permanencia, puedes irte cuando quieras, aunque esperamos poder cuidarte durante muuuucho tiempo.
+              - img "charity-giving" [ref=e661]
+          - generic [ref=e663]:
+            - heading "Llévatelo con estas promos" [level=2] [ref=e664]
+            - generic [ref=e669]:
+              - generic [ref=e670]:
+                - paragraph [ref=e671]: Re-estrena, ayuda al planeta y ahorra
+                - paragraph [ref=e672]:
+                  - paragraph [ref=e673]: Con Re-estrena de Vodafone Flex recibe 50€ al entregar tu antiguo móvil.
+                  - paragraph [ref=e674]: "Es muy fácil:"
+                  - paragraph [ref=e675]: 1 - Compra tu nuevo móvil con Vodafone.
+                  - paragraph [ref=e676]: 2 - En el mail de confirmación recibirás un enlace para iniciar el proceso de venta de tu antiguo móvil.
+                  - paragraph [ref=e677]: 3 - Entra en el enlace y gestiona su venta. El proceso es guiado y con recogida gratuita a domicilio dónde y cuándo nos digas.
+                  - paragraph [ref=e678]: 4 - Tras comprobar el estado de tu antiguo móvil, si cumple con los requisitos, recibirás el dinero mediante transferencia bancaria.
+                  - paragraph [ref=e679]: Además, esta promoción es adicional al resto de descuentos y promociones incluidos para este terminal.
+                  - paragraph [ref=e680]: Date prisa, ¡promoción aplicable a unidades limitadas!
+              - generic [ref=e681] [cursor=pointer]:
+                - text: Ver más
+                - img [ref=e683]
+          - generic [ref=e686]:
+            - group [ref=e688]:
+              - generic "Especificaciones Deploy" [ref=e689] [cursor=pointer]:
+                - heading "Especificaciones" [level=3] [ref=e691]
+                - generic "Deploy" [ref=e692]:
+                  - img "Deploy" [ref=e693]
+            - group [ref=e696]:
+              - generic "Mas información Deploy" [ref=e697] [cursor=pointer]:
+                - heading "Mas información" [level=3] [ref=e699]
+                - generic "Deploy" [ref=e700]:
+                  - img "Deploy" [ref=e701]
+        - generic [ref=e706] [cursor=pointer]:
+          - img "Condiciones legales" [ref=e708]
+          - generic [ref=e710]: Condiciones legales
+      - button "volver al inicio de la página" [ref=e711] [cursor=pointer]:
+        - img [ref=e713]
+        - generic [ref=e715]: volver al inicio de la página
+    - contentinfo [ref=e281]:
+      - heading "Pie de p&aactue;gina de Vodafone" [level=3] [ref=e282]
+      - generic [ref=e283]:
+        - generic [ref=e284]:
+          - generic [ref=e285]:
+            - paragraph [ref=e286]:
+              - text: Social
+              - generic [ref=e287]: Enlaces a las redes sociales de Vodafone
+            - list [ref=e288]:
+              - listitem [ref=e289]:
+                - link "Facebook" [ref=e290] [cursor=pointer]:
+                  - /url: https://www.facebook.com/VodafoneEmpresa
+                  - img "Facebook" [ref=e291]
+              - listitem [ref=e293]:
+                - link "Twitter" [ref=e294] [cursor=pointer]:
+                  - /url: https://twitter.com/vodafoneempresa
+                  - img "Twitter" [ref=e295]
+              - listitem [ref=e297]:
+                - link "Whatsapp" [ref=e298] [cursor=pointer]:
+                  - /url: https://whatsapp.com/channel/0029VaVeUIj96H4N57K1G80k
+                  - img "Whatsapp" [ref=e299]
+              - listitem [ref=e301]:
+                - link "Youtube" [ref=e302] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCOssPMGeK95-MvlbOBGmzjQ
+                  - img "Youtube" [ref=e303]
+              - listitem [ref=e305]:
+                - link "Linkedin" [ref=e306] [cursor=pointer]:
+                  - /url: https://es.linkedin.com/showcase/vodafoneempresa/
+                  - img "Linkedin" [ref=e307]
+          - img [ref=e309]
+        - generic [ref=e311]:
+          - button "Fibra y móvil autónomos" [ref=e313] [cursor=pointer]:
+            - paragraph [ref=e314]: Fibra y móvil autónomos
+          - button "Tarifas móvil autónomos" [ref=e316] [cursor=pointer]:
+            - paragraph [ref=e317]: Tarifas móvil autónomos
+          - button "Fibra autónomos" [ref=e319] [cursor=pointer]:
+            - paragraph [ref=e320]: Fibra autónomos
+          - button "Móviles y Dispositivos" [ref=e322] [cursor=pointer]:
+            - paragraph [ref=e323]: Móviles y Dispositivos
+          - button "Servicios One Profesional" [ref=e325] [cursor=pointer]:
+            - paragraph [ref=e326]: Servicios One Profesional
+          - button "Televisión" [ref=e328] [cursor=pointer]:
+            - paragraph [ref=e329]: Televisión
+          - button "Ayuda" [ref=e331] [cursor=pointer]:
+            - paragraph [ref=e332]: Ayuda
+          - button "Vodafone España" [ref=e334] [cursor=pointer]:
+            - paragraph [ref=e335]: Vodafone España
+        - generic [ref=e336]:
+          - navigation [ref=e338]:
+            - list [ref=e339]:
+              - listitem [ref=e340]:
+                - link "Aviso Legal" [ref=e341] [cursor=pointer]:
+                  - /url: https://www.vodafone.es/c/conocenos/es/aviso-legal/
+              - listitem [ref=e342]:
+                - link "Política de Privacidad y Cookies" [ref=e343] [cursor=pointer]:
+                  - /url: https://www.vodafone.es/c/conocenos/es/vodafone-espana/quienes-somos/legal-y-regulatorio/politica-de-privacidad-y-cookies/
+              - listitem [ref=e344]:
+                - link "Política Seguridad de Información" [ref=e345] [cursor=pointer]:
+                  - /url: https://www.vodafone.es/c/statics/Politica_de_Seguridad_de_la_Informacion.pdf
+              - listitem [ref=e346]:
+                - link "Accesibilidad" [ref=e347] [cursor=pointer]:
+                  - /url: https://www.vodafone.es/c/conocenos/es/accesibilidad/
+              - listitem [ref=e348]:
+                - link "Información a clientes" [ref=e349] [cursor=pointer]:
+                  - /url: https://www.vodafone.es/c/conocenos/es/vodafone-espana/contacto/informacion-al-consumidor/
+              - listitem [ref=e350]:
+                - link "Calidad del servicio" [ref=e351] [cursor=pointer]:
+                  - /url: https://www.vodafone.es/c/conocenos/es/vodafone-espana/calidad/calidad-de-servicio/
+              - listitem [ref=e352]:
+                - link "Mapa Web" [ref=e353] [cursor=pointer]:
+                  - /url: https://www.vodafone.es/c/mapa-web/
+          - paragraph [ref=e355]:
+            - text: © 2026 Vodafone España
+            - text: Avda. América 115, 28042 Madrid
+          - generic [ref=e356]:
+            - link "Confianza Online" [ref=e357] [cursor=pointer]:
+              - /url: https://www.confianzaonline.es/empresas/vodafone.htm
+              - img "Confianza Online" [ref=e358]
+            - link "Technosite" [ref=e359] [cursor=pointer]:
+              - /url: https://www.vodafone.es/c/statics/diploma-vodafone-2023-acc-reducido.pdf
+              - img "Technosite" [ref=e360]
+            - link "Esquema Nacional de Seguridad" [ref=e361] [cursor=pointer]:
+              - /url: https://www.vodafone.es/c/statics/Certificado_ENS.pdf
+              - img "Esquema Nacional de Seguridad" [ref=e362]
+            - link "ISO 27001" [ref=e363] [cursor=pointer]:
+              - /url: https://www.vodafone.es/c/statics/Certificado_ISO_27001.pdf
+              - img "ISO 27001" [ref=e364]
+            - link "ISO 27017" [ref=e365] [cursor=pointer]:
+              - /url: https://www.vodafone.es/c/statics/Certificado_ISO_27017.pdf
+              - img "ISO 27017" [ref=e366]
+            - link "ISO 31000" [ref=e367] [cursor=pointer]:
+              - /url: https://www.vodafone.es/c/statics/certificado-iso-31000.pdf
+              - img "ISO 31000" [ref=e368]
+            - link "ISO 23301" [ref=e369] [cursor=pointer]:
+              - /url: https://www.vodafone.es/c/statics/certificado-ISO22301.pdf
+              - img "ISO 23301" [ref=e370]
+  - iframe

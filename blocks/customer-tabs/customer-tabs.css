@@ -7,36 +7,53 @@ main > .section > .customer-tabs-wrapper {
 
 .customer-tabs {
   margin-bottom: 8px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .customer-tabs .customer-tabs-bar {
   display: flex;
-  border-bottom: 1px solid var(--color-grey-2, #e0e0e0);
+  align-items: flex-end;
+  gap: 8px;
+  border-bottom: 1px solid #bebebe;
 }
 
 .customer-tabs .customer-tabs-btn {
   flex: 1;
-  padding: 12px 24px;
+  position: relative;
+  padding: 12px 0;
   background: none;
   border: none;
-  border-bottom: 3px solid transparent;
-  font-size: var(--body-font-size-m, 16px);
+  font-size: 18px;
   font-family: var(--body-font-family);
-  color: var(--color-grey-3, #999);
+  color: #0d0d0d;
+  font-weight: 400;
   cursor: pointer;
-  transition: color 0.2s, border-color 0.2s;
+  transition: font-weight 0.2s;
   margin: 0;
   text-align: center;
+  line-height: 26px;
 }
 
 .customer-tabs .customer-tabs-btn:hover {
-  color: var(--color-black, #000);
+  font-weight: 700;
 }
 
 .customer-tabs .customer-tabs-btn.active {
-  color: var(--color-black, #000);
-  border-bottom-color: var(--color-red, #e60000);
   font-weight: 700;
+}
+
+.customer-tabs .customer-tabs-btn.active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--color-red, #e60000);
+  border-radius: 1px;
 }
 
 /* Placeholder for Ya soy cliente tab */
