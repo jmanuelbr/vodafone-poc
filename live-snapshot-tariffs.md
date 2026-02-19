@@ -27,7 +27,7 @@
                     - img [ref=e30]
                   - menuitem "Soy cliente Ir a la pagina acceso clientes" [ref=e32] [cursor=pointer]:
                     - img [ref=e33]
-                    - generic: Soy cliente
+                    - generic: Soy cliente Vicente
                     - generic [ref=e35]: Ir a la pagina acceso clientes
                 - navigation "Menu navegación principal. Para dispositivos móviles" [ref=e36]:
                   - heading "Menu navegación principal. Para dispositivos móviles" [level=2] [ref=e37]
