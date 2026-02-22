@@ -50,6 +50,21 @@ function getContentSourceBaseUrl() {
 }
 
 /**
+ * Returns raw GitHub base URL for the repo (branch from hostname, e.g. main).
+ * Used when content.da.live returns 401; raw GitHub is public.
+ */
+function getGitHubContentBaseUrl() {
+  const host = window.location.hostname;
+  if (!host.endsWith('.aem.page')) return null;
+  const parts = host.split('--');
+  if (parts.length < 3) return null;
+  const ref = parts[0] || 'main';
+  const repo = parts[parts.length - 2];
+  const owner = parts[parts.length - 1].replace(/\.aem\.page$/i, '');
+  return `https://raw.githubusercontent.com/${owner}/${repo}/${ref}`;
+}
+
+/**
  * Loads a fragment: tries same-origin paths first, then content source (content.da.live).
  * EDS preview often does not serve nav/footer from the page origin; they exist at the content source.
  * @param {string} path The path to the fragment (e.g. /nav or /footer)
@@ -100,14 +115,27 @@ export async function loadFragment(path) {
     }
   }
 
-  // 2) Content source (e.g. content.da.live) – nav/footer exist in repo, EDS may not serve them on preview
+  // 2) Content source (content.da.live) – may return 401 if private
   const contentBase = getContentSourceBaseUrl();
   if (contentBase) {
-    const fragmentPath = `${path}.plain.html`;
-    const resp = await fetch(`${contentBase}/${fragmentPath}`);
+    const pathNoLead = path.replace(/^\//, '');
+    const plainName = `${pathNoLead}.plain.html`;
+    const resp = await fetch(`${contentBase.replace(/\/$/, '')}/${plainName}`);
     if (resp.ok) {
       if (window.hlx) window.hlx.fragmentBasePath = contentBase;
       return processResponse(resp, path, contentBase);
+    }
+  }
+
+  // 3) Raw GitHub – public repo files when content.da.live returns 401
+  const gh = getGitHubContentBaseUrl();
+  if (gh) {
+    const pathNoLead = path.replace(/^\//, '');
+    const plainName = `${pathNoLead}.plain.html`;
+    const resp = await fetch(`${gh}/${plainName}`);
+    if (resp.ok) {
+      if (window.hlx) window.hlx.fragmentBasePath = gh;
+      return processResponse(resp, path, gh);
     }
   }
 
