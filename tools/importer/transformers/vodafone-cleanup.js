@@ -32,9 +32,14 @@ export default function transform(hookName, element, payload) {
 
     // Remove PDP-specific non-content elements (found in PDP captured DOM)
     // EXTRACTED: Found ul.usp-bar in PDP cleaned.html
-    // EXTRACTED: Found .mva10-c-timeline-steps--horizontal (purchase process UI)
+    // EXTRACTED: Found .product-benefits in PDP cleaned.html (USP bar: Pago a plazos, Trae tu móvil, etc.)
+    // EXTRACTED: Found .order-summary in PDP cleaned.html (dynamic order summary section)
+    // EXTRACTED: Found nav[aria-label="Navegación"] in PDP cleaned.html (breadcrumb)
     WebImporter.DOMUtils.remove(element, [
       '.usp-bar',
+      '.product-benefits',
+      '.order-summary',
+      'nav[aria-label="Navegación"]',
     ]);
 
     // Remove carousel UI controls (navigation dots, play button, animation menu)

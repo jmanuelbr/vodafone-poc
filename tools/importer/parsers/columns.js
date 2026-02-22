@@ -2,9 +2,9 @@
 /* global WebImporter */
 
 /**
- * Parser for columns block (SEO content sections)
+ * Parser for columns block (content + image sections)
  *
- * Source: https://www.vodafone.es/c/particulares/es/productos-y-servicios/movil/contrato/tarifas-contrato/
+ * Source: https://www.vodafone.es/c/particulares/es/ (tarifas, PDP pages)
  * Base Block: columns
  *
  * Block Structure:
@@ -12,14 +12,21 @@
  * - Col 1: H2 heading + rich text (paragraphs, lists, links)
  * - Col 2: Image
  *
- * Source HTML Pattern:
+ * Source HTML Patterns:
+ *
+ * Pattern A (Tarifas page):
  * section.ws10-m-text-image
- *   div.ws10-m-text-image__content-text
- *     section.ws10-c-title-standard > h2 (heading)
- *     span.ws10-m-text-image__paragraph (rich text body)
+ *   div.ws10-m-text-image__content-text > section > h2 + span
  *   picture.ws10-m-text-image__content-img > img
  *
- * Generated: 2026-02-17
+ * Pattern B (PDP - Transparency section):
+ * <section>
+ *   <h2>Somos transparentes...</h2>
+ *   <p>Estamos convencidos...</p>
+ *   <img src="..." alt="charity-giving">
+ * </section>
+ *
+ * Generated: 2026-02-17 (updated 2026-02-22 for PDP support)
  */
 export default function parse(element, { document }) {
   // Extract heading
@@ -49,6 +56,13 @@ export default function parse(element, { document }) {
     while (clone.firstChild) {
       textCol.appendChild(clone.firstChild);
     }
+  } else {
+    // Fallback for PDP: collect p elements that are siblings of the heading
+    const paragraphs = element.querySelectorAll('p');
+    paragraphs.forEach((p) => {
+      const clone = p.cloneNode(true);
+      textCol.appendChild(clone);
+    });
   }
 
   // Build image column

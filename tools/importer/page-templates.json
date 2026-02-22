@@ -176,28 +176,60 @@
     {
       "name": "product-detail-page",
       "urls": [
-        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-note-15-pro-5g-negro-256gb-316376"
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-note-15-pro-5g-negro-256gb-316376/"
       ],
       "description": "Vodafone product detail page (PDP) for mobile phones with product gallery, tariff pricing cards, payment options, purchase process steps, promotions, and specifications accordion",
       "blocks": [
         {
-          "name": "columns",
-          "instances": [
-            ".mva10-c-image-gallery",
-            ".mva10-c-timeline-steps"
-          ]
+          "name": "product-gallery",
+          "instances": [".product-gallery"]
+        },
+        {
+          "name": "customer-tabs",
+          "instances": [".tariff-tabs"]
+        },
+        {
+          "name": "tariff-filter",
+          "instances": [".tariff-types"]
         },
         {
           "name": "cards-pricing",
-          "instances": [
-            ".card-rate-composition"
-          ]
+          "instances": [".tariff-card"]
+        },
+        {
+          "name": "payment-options",
+          "instances": [".payment-options"]
+        },
+        {
+          "name": "columns-steps",
+          "instances": ["section:has(.payment-plans) ol"]
+        },
+        {
+          "name": "columns",
+          "instances": ["section:has(img[alt='charity-giving'])"]
+        },
+        {
+          "name": "promo-card",
+          "instances": [".promo-card"]
         },
         {
           "name": "accordion",
-          "instances": [
-            "mva10-c-accordion"
-          ]
+          "instances": ["section:has(table)"]
+        },
+        {
+          "name": "section-transparency",
+          "instances": ["section:has(img[alt='charity-giving'])"],
+          "section": ""
+        },
+        {
+          "name": "section-promotions",
+          "instances": ["section:has(.promo-card)"],
+          "section": ""
+        },
+        {
+          "name": "section-product-details",
+          "instances": ["section:has(table)"],
+          "section": ""
         }
       ]
     }
