@@ -14,23 +14,50 @@ import {
 } from '../../scripts/aem.js';
 
 /**
+ * Returns candidate base paths for fragment URLs (root first, then pathname prefixes).
+ * On EDS, scripts may be served from domain root so codeBasePath is empty; fragments
+ * can live under the page path (e.g. /c/tienda-online/autonomos/nav.plain.html).
+ */
+function getFragmentBaseCandidates() {
+  const candidates = [];
+  if (window.hlx && window.hlx.codeBasePath) {
+    candidates.push(window.hlx.codeBasePath.replace(/\/$/, ''));
+  }
+  const pathname = window.location.pathname;
+  const segments = pathname.split('/').filter(Boolean);
+  let prefix = '';
+  for (const seg of segments) {
+    prefix += `/${seg}`;
+    if (!candidates.includes(prefix)) candidates.push(prefix);
+  }
+  if (!candidates.includes('')) candidates.push('');
+  return candidates;
+}
+
+/**
  * Loads a fragment.
- * Uses code base path when set (e.g. on EDS with path prefix like /c/tienda-online/autonomos)
- * so that /nav and /footer resolve to the same origin path as the page.
+ * Tries the code base path first, then pathname prefixes (for EDS where nav/footer
+ * live under e.g. /c/tienda-online/autonomos/ so they work for every da.live page).
  * @param {string} path The path to the fragment (e.g. /nav or /footer)
  * @returns {HTMLElement} The root element of the fragment
  */
 export async function loadFragment(path) {
-  if (path && path.startsWith('/') && !path.startsWith('//')) {
-    const codeBasePath = (window.hlx && window.hlx.codeBasePath) ? window.hlx.codeBasePath.replace(/\/$/, '') : '';
-    const fragmentPath = codeBasePath ? `${codeBasePath}${path}` : path;
-    const fragmentUrl = `${fragmentPath}.plain.html`;
+  if (!path || !path.startsWith('/') || path.startsWith('//')) return null;
+
+  const plainUrl = `${path}.plain.html`;
+  const bases = window.hlx?.fragmentBasePath != null
+    ? [window.hlx.fragmentBasePath]
+    : getFragmentBaseCandidates();
+
+  for (const base of bases) {
+    const fragmentPath = base ? `${base}${path}` : path;
+    const fragmentUrl = base ? `${base}${plainUrl}` : plainUrl;
     const resp = await fetch(fragmentUrl);
     if (resp.ok) {
+      if (window.hlx) window.hlx.fragmentBasePath = base;
       const main = document.createElement('main');
       main.innerHTML = await resp.text();
 
-      // reset base path for media to fragment base
       const fragmentBaseUrl = new URL(fragmentPath, window.location.origin);
       const resetAttributeBase = (tag, attr) => {
         main.querySelectorAll(`${tag}[${attr}^="./media_"]`).forEach((elem) => {
