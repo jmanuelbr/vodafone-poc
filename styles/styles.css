@@ -293,6 +293,12 @@ button.tertiary:focus {
   color: var(--color-black);
 }
 
+/* Strikethrough price (teal, matching Vodafone PDP) */
+s, del {
+  color: var(--color-teal);
+  text-decoration-color: var(--color-teal);
+}
+
 /* Images */
 main img {
   max-width: 100%;
