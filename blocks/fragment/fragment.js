@@ -101,11 +101,40 @@ export async function loadFragment(path) {
     return main;
   };
 
-  // 1) Same-origin: use cached base or try all path candidates
-  const sameOriginBases = window.hlx?.fragmentBasePath != null
-    ? [window.hlx.fragmentBasePath]
-    : getSameOriginBaseCandidates();
+  const pathNoLead = path.replace(/^\//, '');
+  const plainName = `${pathNoLead}.plain.html`;
+  const isEDS = window.location.hostname.endsWith('.aem.page');
 
+  const tryRemoteBase = (baseUrl) => {
+    if (!baseUrl) return null;
+    const url = `${baseUrl.replace(/\/$/, '')}/${plainName}`;
+    return fetch(url).then((r) => (r.ok ? { resp: r, base: baseUrl } : null));
+  };
+
+  // 1) Use cached base if we already found one that works (avoids repeated failed requests)
+  const cached = window.hlx?.fragmentBasePath;
+  if (cached != null) {
+    const url = cached.startsWith('http') ? `${cached.replace(/\/$/, '')}/${plainName}` : (cached ? `${cached}${plainUrl}` : plainUrl);
+    const resp = await fetch(url);
+    if (resp.ok) {
+      const fragmentPath = cached.startsWith('http') ? path : (cached ? `${cached}${path}` : path);
+      return processResponse(resp, fragmentPath, cached.startsWith('http') ? cached : null);
+    }
+  }
+
+  // 2) On EDS: only raw GitHub (e.g. raw.githubusercontent.com/owner/repo/main) – no other fallbacks
+  if (isEDS) {
+    const gh = getGitHubContentBaseUrl();
+    const result = gh ? await tryRemoteBase(gh) : null;
+    if (result) {
+      if (window.hlx) window.hlx.fragmentBasePath = gh;
+      return processResponse(result.resp, path, gh);
+    }
+    return null;
+  }
+
+  // 3) Local / non-EDS: same-origin path candidates, then content source, then raw GitHub
+  const sameOriginBases = getSameOriginBaseCandidates();
   for (const base of sameOriginBases) {
     const fragmentPath = base ? `${base}${path}` : path;
     const resp = await tryFetch(base, true);
@@ -114,28 +143,20 @@ export async function loadFragment(path) {
       return processResponse(resp, fragmentPath, null);
     }
   }
-
-  // 2) Content source (content.da.live) – may return 401 if private
   const contentBase = getContentSourceBaseUrl();
   if (contentBase) {
-    const pathNoLead = path.replace(/^\//, '');
-    const plainName = `${pathNoLead}.plain.html`;
-    const resp = await fetch(`${contentBase.replace(/\/$/, '')}/${plainName}`);
-    if (resp.ok) {
+    const resp = await tryRemoteBase(contentBase);
+    if (resp) {
       if (window.hlx) window.hlx.fragmentBasePath = contentBase;
-      return processResponse(resp, path, contentBase);
+      return processResponse(resp.resp, path, contentBase);
     }
   }
-
-  // 3) Raw GitHub – public repo files when content.da.live returns 401
   const gh = getGitHubContentBaseUrl();
   if (gh) {
-    const pathNoLead = path.replace(/^\//, '');
-    const plainName = `${pathNoLead}.plain.html`;
-    const resp = await fetch(`${gh}/${plainName}`);
-    if (resp.ok) {
+    const result = await tryRemoteBase(gh);
+    if (result) {
       if (window.hlx) window.hlx.fragmentBasePath = gh;
-      return processResponse(resp, path, gh);
+      return processResponse(result.resp, path, gh);
     }
   }
 
