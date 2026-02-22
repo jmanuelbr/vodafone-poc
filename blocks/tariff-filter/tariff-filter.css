@@ -37,3 +37,16 @@ main > .section > .tariff-filter-wrapper {
 .tariff-filter-btn:hover:not(.active) {
   background: rgba(0 105 124 / 10%);
 }
+
+@media (width < 600px) {
+  .tariff-filter-bar {
+    gap: 8px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .tariff-filter-btn {
+    padding: 6px 16px;
+    font-size: 13px;
+  }
+}

@@ -226,12 +226,42 @@
   .columns.steps > div {
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 0;
+  }
+
+  .columns.steps > div > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 16px;
+    padding: 16px 0;
+    width: 100%;
+    max-width: 340px;
   }
 
   .columns.steps > div > div::before,
   .columns.steps > div > div::after,
   .columns.steps > div > div .steps-dot {
     display: none;
+  }
+
+  .columns.steps > div > div > .icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+  }
+
+  .columns.steps > div > div > .icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .columns.steps > div > div .steps-text p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
   }
 }

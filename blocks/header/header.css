@@ -432,3 +432,130 @@ header nav .nav-tools a.nav-cta-llamamos:hover {
   color: var(--color-white);
   text-decoration: none;
 }
+
+/* ========================================
+   Mobile segment label (replaces top bar)
+   ======================================== */
+header .nav-segment-label {
+  display: none;
+}
+
+/* ========================================
+   Mobile header overrides (< 900px)
+   ======================================== */
+@media (width < 900px) {
+  /* Update nav-height for mobile */
+  header {
+    height: 56px;
+  }
+
+  /* Hide the dark top bar on mobile */
+  header .nav-top-bar {
+    display: none;
+  }
+
+  /* Compact mobile nav: 56px, single row */
+  header nav {
+    grid-template:
+      'brand segment tools hamburger' 56px / auto auto 1fr auto;
+    height: 56px;
+    padding: 0 16px;
+    gap: 0 8px;
+  }
+
+  header nav[aria-expanded='true'] {
+    grid-template:
+      'brand segment tools hamburger' 56px
+      'sections sections sections sections' 1fr / auto auto 1fr auto;
+  }
+
+  /* Smaller logo on mobile */
+  header nav .nav-brand img {
+    height: 32px;
+  }
+
+  header nav .nav-brand a {
+    padding: 8px 0;
+  }
+
+  /* Show segment label on mobile */
+  header .nav-segment-label {
+    display: flex;
+    align-items: center;
+    grid-area: segment;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    white-space: nowrap;
+    gap: 4px;
+  }
+
+  header .nav-segment-label span::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-left: 4px;
+    vertical-align: 2px;
+  }
+
+  /* Tools: push to right, show only "Soy cliente" as icon */
+  header nav .nav-tools {
+    justify-content: flex-end;
+    gap: 4px;
+  }
+
+  header .nav-tools ul {
+    gap: 4px;
+  }
+
+  /* Hide "¿Te llamamos?" CTA on mobile */
+  header nav .nav-tools a.nav-cta-llamamos {
+    display: none;
+  }
+
+  /* "Soy cliente" - icon style on mobile */
+  header nav .nav-tools a:not(.nav-cta-llamamos) {
+    font-size: 0;
+    width: 44px;
+    height: 44px;
+    position: relative;
+  }
+
+  /* User icon for "Soy cliente" on mobile */
+  header nav .nav-tools a:not(.nav-cta-llamamos)::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='1.5'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='12' cy='7' r='4'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* Hamburger moves to right on mobile */
+  header nav .nav-hamburger {
+    grid-area: hamburger;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header nav .nav-hamburger button {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Add shadow to mobile nav */
+  header .nav-wrapper {
+    box-shadow: 0 2px 8px -2px rgb(0 0 0 / 16%);
+  }
+}

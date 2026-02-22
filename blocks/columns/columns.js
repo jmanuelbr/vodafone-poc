@@ -16,10 +16,31 @@ export default function decorate(block) {
     });
   });
 
-  // Steps variant: add timeline dots
+  // Steps variant: restructure icon+text and add timeline dots
   if (block.classList.contains('steps')) {
     [...block.children].forEach((row) => {
       [...row.children].forEach((col) => {
+        // Extract icon from <p> and make it a direct child for flex layout
+        const p = col.querySelector('p');
+        const icon = p?.querySelector('.icon');
+        if (icon && p) {
+          // Remove icon and following <br> from paragraph
+          const br = icon.nextElementSibling?.tagName === 'BR' ? icon.nextElementSibling : null;
+          icon.remove();
+          if (br) br.remove();
+          // Also remove leading <br> if present
+          if (p.firstChild?.nodeName === 'BR') p.firstChild.remove();
+
+          // Create text wrapper for remaining paragraph content
+          const textWrap = document.createElement('div');
+          textWrap.className = 'steps-text';
+          textWrap.append(p);
+
+          // Re-insert icon first, then text wrapper
+          col.prepend(textWrap);
+          col.prepend(icon);
+        }
+
         const dot = document.createElement('div');
         dot.className = 'steps-dot';
         col.append(dot);

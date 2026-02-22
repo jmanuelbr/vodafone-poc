@@ -99,6 +99,23 @@ main > .section > .customer-tabs-wrapper {
   color: #fff;
 }
 
+/* Mobile adjustments */
+@media (width < 600px) {
+  .customer-tabs .customer-tabs-btn {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  .customer-tabs-client-text {
+    font-size: 20px;
+  }
+
+  .customer-tabs-client-btn {
+    padding: 8px 24px;
+    font-size: 16px;
+  }
+}
+
 /* Override grid placement for tab 1 placeholder */
 @media (width >= 900px) {
   .product-gallery-container > .customer-tab-1 {

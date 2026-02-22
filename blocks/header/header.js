@@ -196,6 +196,12 @@ export default async function decorate(block) {
     });
   }
 
+  // Mobile segment label (visible only on mobile, replaces top bar)
+  const segmentLabel = document.createElement('div');
+  segmentLabel.className = 'nav-segment-label';
+  segmentLabel.innerHTML = '<span>Autónomos y Empresas</span>';
+  nav.insertBefore(segmentLabel, navSections);
+
   // hamburger for mobile
   const hamburger = document.createElement('div');
   hamburger.classList.add('nav-hamburger');

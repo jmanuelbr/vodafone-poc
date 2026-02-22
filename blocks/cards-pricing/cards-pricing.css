@@ -325,6 +325,34 @@
   color: var(--color-white);
 }
 
+/* Mobile: single column stacked cards */
+@media (width < 600px) {
+  .cards-pricing > ul {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .cards-pricing > ul > li {
+    flex: none;
+    width: 100%;
+  }
+
+  .cards-pricing .cards-pricing-recommend-tab,
+  .cards-pricing .cards-pricing-highlight-tab {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .cards-pricing .cards-pricing-price-num {
+    font-size: 48px;
+  }
+
+  .cards-pricing .cards-pricing-card-body > p:last-child {
+    flex-direction: row;
+    gap: 12px;
+  }
+}
+
 @media (width >= 900px) {
   .cards-pricing > ul > li {
     flex: 0 0 calc(50% - 8px);

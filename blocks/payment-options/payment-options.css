@@ -104,3 +104,19 @@ main > .section > .payment-options-wrapper {
 .payment-options .payment-options-card p:first-child strong {
   font-size: 24px;
 }
+
+/* Mobile adjustments */
+@media (width < 600px) {
+  .payment-options .payment-options-tabs {
+    gap: 10px;
+  }
+
+  .payment-options .payment-options-tab {
+    padding: 14px 12px;
+    font-size: 16px;
+  }
+
+  .payment-options .payment-options-card {
+    padding: 16px 12px;
+  }
+}

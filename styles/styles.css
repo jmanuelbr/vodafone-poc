@@ -444,3 +444,17 @@ main .default-content-wrapper > ul:has(.icon) > li .icon img {
   height: 24px;
   filter: invert(50%);
 }
+
+@media (width < 600px) {
+  main .default-content-wrapper > ul:has(.icon) {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main .default-content-wrapper > ul:has(.icon) > li {
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 100px;
+  }
+}
