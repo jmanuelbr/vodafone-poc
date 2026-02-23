@@ -171,6 +171,10 @@ p {
   line-height: 1.44;
 }
 
+s {
+  color: var(--color-teal);
+}
+
 code,
 pre {
   font-size: var(--body-font-size-s);
