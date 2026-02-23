@@ -95,6 +95,7 @@ main > .section > .payment-options-wrapper {
 
 .payment-options .payment-options-card.active {
   display: block;
+  background-color: var(--color-white);
 }
 
 .payment-options .payment-options-card p {
