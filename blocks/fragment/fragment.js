@@ -50,17 +50,26 @@ function getContentSourceBaseUrl() {
 }
 
 /**
+ * Returns true when running on EDS (preview or live).
+ */
+function isEDSHost() {
+  const host = window.location.hostname;
+  return host.endsWith('.aem.page') || host.endsWith('.aem.live');
+}
+
+/**
  * Returns raw GitHub base URL for the repo (branch from hostname, e.g. main).
  * Used when content.da.live returns 401; raw GitHub is public.
+ * Supports both *.aem.page (preview) and *.aem.live (live).
  */
 function getGitHubContentBaseUrl() {
   const host = window.location.hostname;
-  if (!host.endsWith('.aem.page')) return null;
+  if (!isEDSHost()) return null;
   const parts = host.split('--');
   if (parts.length < 3) return null;
   const ref = parts[0] || 'main';
   const repo = parts[parts.length - 2];
-  const owner = parts[parts.length - 1].replace(/\.aem\.page$/i, '');
+  const owner = parts[parts.length - 1].replace(/\.aem\.(page|live)$/i, '');
   return `https://raw.githubusercontent.com/${owner}/${repo}/${ref}`;
 }
 
@@ -103,7 +112,7 @@ export async function loadFragment(path) {
 
   const pathNoLead = path.replace(/^\//, '');
   const plainName = `${pathNoLead}.plain.html`;
-  const isEDS = window.location.hostname.endsWith('.aem.page');
+  const isEDS = isEDSHost();
 
   const tryRemoteBase = (baseUrl) => {
     if (!baseUrl) return null;
