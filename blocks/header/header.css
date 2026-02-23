@@ -104,6 +104,11 @@ header nav[aria-expanded='true'] {
 }
 
 @media (width >= 900px) {
+  /* Account for the 26px top bar + 72px main nav on desktop */
+  header {
+    height: calc(var(--nav-height) + 26px);
+  }
+
   header .nav-wrapper {
     position: sticky;
     top: 0;

@@ -1,0 +1,73 @@
+/* Breadcrumb section — sits between header and content with no extra gaps */
+main > .section.breadcrumb-container {
+  margin: 0 16px;
+  padding: 0;
+}
+
+.breadcrumb-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb {
+  padding: 12px 0;
+}
+
+.breadcrumb nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0;
+  align-items: center;
+}
+
+.breadcrumb nav ul li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: var(--color-black);
+}
+
+.breadcrumb nav ul li::after {
+  content: url("data:image/svg+xml;charset=utf8,<svg width='100%' height='100%' viewBox='0 0 192 192' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M62 28L130 96L62 164' stroke='%230d0d0d' stroke-width='8' stroke-miterlimit='10' stroke-linecap='round'/></svg>");
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 0 8px;
+}
+
+.breadcrumb nav ul li:last-child::after {
+  display: none;
+}
+
+.breadcrumb nav ul li a {
+  color: var(--color-black);
+  text-decoration: underline;
+}
+
+.breadcrumb nav ul li a:hover {
+  color: var(--color-red);
+}
+
+.breadcrumb nav ul li:last-child span {
+  color: var(--color-black);
+  pointer-events: none;
+}
+
+@media (min-width: 900px) {
+  main > .section.breadcrumb-container {
+    margin: 0 24px;
+  }
+
+  .breadcrumb nav ul li {
+    font-size: 16px;
+  }
+
+  .breadcrumb nav ul li::after {
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+  }
+}
