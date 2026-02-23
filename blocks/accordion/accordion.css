@@ -1,17 +1,15 @@
-/* Accordion - Vodafone FAQ Style */
+/* Accordion - Vodafone PDP Style */
 
 .accordion details {
   border: none;
-  border-bottom: 1px solid var(--color-grey-2);
-}
-
-.accordion details:first-child {
-  border-top: 1px solid var(--color-grey-2);
+  padding: 16px;
+  background-color: var(--color-white);
+  border-radius: 6px;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
 .accordion details + details {
-  margin-top: 0;
+  margin-top: 24px;
 }
 
 .accordion details p {
@@ -19,13 +17,13 @@
 }
 
 .accordion details summary {
-  position: relative;
-  padding: 16px 0;
-  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
   cursor: pointer;
   list-style: none;
-  overflow: auto;
-  transition: color 0.2s;
+  overflow: visible;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -39,7 +37,7 @@
 .accordion details summary:focus,
 .accordion details summary:hover {
   background-color: transparent;
-  color: var(--color-red);
+  color: var(--color-black);
 }
 
 .accordion details summary::-webkit-details-marker {
@@ -48,19 +46,18 @@
 
 .accordion details summary::after {
   content: '';
-  position: absolute;
-  top: 50%;
-  right: 8px;
-  transform: translateY(-50%) rotate(135deg);
-  width: 8px;
-  height: 8px;
-  border: 2px solid var(--color-black);
-  border-width: 2px 2px 0 0;
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  border: solid var(--color-black);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
   transition: transform 0.3s ease;
+  margin-left: 20px;
 }
 
 .accordion details[open] summary::after {
-  transform: translateY(-50%) rotate(-45deg);
+  transform: rotate(-135deg);
 }
 
 .accordion details .accordion-item-body {
@@ -85,7 +82,8 @@
   display: flex;
   flex-direction: row;
   padding: 16px 0;
-  border-bottom: 1px solid var(--color-grey-2);
+  border-bottom: 1px solid rgb(204 204 204);
+  align-items: center;
 }
 
 .accordion-spec-row:last-child {
@@ -116,7 +114,7 @@
 }
 
 .accordion-spec-label strong {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--color-black);
 }
@@ -125,14 +123,14 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .accordion-spec-values span {
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--color-black);
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(74 74 74);
 }
 
 @media (width < 900px) {

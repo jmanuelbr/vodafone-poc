@@ -22,6 +22,19 @@
   display: block;
 }
 
+/* 2-col text+image: constrain decorative image size */
+.columns-2-cols > div > .columns-img-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.columns-2-cols > div > .columns-img-col img {
+  width: auto;
+  max-height: 80px;
+  border-radius: 0;
+}
+
 /* Product gallery: all columns are image-only (PDP 4-image gallery) */
 .columns-4-cols > div > .columns-img-col img {
   border-radius: 0;
