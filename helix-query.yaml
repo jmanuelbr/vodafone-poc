@@ -2,7 +2,7 @@ indices:
   website:
     source: html
     include:
-      - '/**/*.html'
+      - '/**'
     exclude:
       - '/drafts/**'
     properties:
