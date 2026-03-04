@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-400-con-honor-choice-earbuds-clip-medianoche-512gb-316014/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/honor-400-con-honor-choice-earbuds-clip-medianoche-512gb-316014",
+  "timestamp": "2026-02-24T12:06:43.401Z",
+  "title": "HONOR 400 con HONOR Choice Earbuds Clip Medianoche 512GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "customer-tabs",
+    "customer-tabs",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "cards-pricing",
+    "payment-options",
+    "columns-steps",
+    "columns-steps",
+    "columns",
+    "promo-card",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

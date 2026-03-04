@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/tcl-nxtpaper-70-pro-5g-azul-512gb-316358/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/tcl-nxtpaper-70-pro-5g-azul-512gb-316358",
+  "timestamp": "2026-02-24T12:06:17.875Z",
+  "title": "TCL NXTPAPER 70 Pro 5G Azul 512GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "customer-tabs",
+    "customer-tabs",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "cards-pricing",
+    "payment-options",
+    "columns-steps",
+    "columns-steps",
+    "columns",
+    "promo-card",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

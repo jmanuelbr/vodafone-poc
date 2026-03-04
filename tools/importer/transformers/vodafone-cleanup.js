@@ -22,39 +22,76 @@ const TransformHook = {
 
 export default function transform(hookName, element, payload) {
   if (hookName === TransformHook.beforeTransform) {
-    // Remove breadcrumb navigation (not authorable content)
-    // EXTRACTED: Found class="ws10-m-with-breadcrumb" in captured DOM (homepage/tarifas)
-    // EXTRACTED: Found nav[aria-label="breadcrumb"] in PDP captured DOM
+    // Remove site chrome: header, footer, navigation
+    // Live DOM uses header.vfh-header and footer.vfh-footer
+    WebImporter.DOMUtils.remove(element, [
+      'header',
+      'footer',
+      '.MDDfooter',
+    ]);
+
+    // Remove cookie consent, modals, spinners
+    WebImporter.DOMUtils.remove(element, [
+      '#onetrust-consent-sdk',
+      '#icSpinner',
+      '#icModal',
+      '.x-root-container',
+    ]);
+
+    // Remove all script elements and config/analytics containers
+    WebImporter.DOMUtils.remove(element, [
+      'script',
+      'style',
+      'link',
+      'noscript',
+      'iframe',
+      '.tol-config',
+      '.tol-literals',
+      '.tol-modules',
+      '.tol-parametros_config',
+      '.tol-parametros_analitica',
+    ]);
+
+    // Remove SVG sprite containers (inline SVGs injected by framework)
+    const svgContainers = element.querySelectorAll('div > svg:only-child');
+    svgContainers.forEach((svg) => {
+      const parent = svg.parentElement;
+      if (parent && !parent.closest('#fichaTol') && parent.children.length === 1) {
+        parent.remove();
+      }
+    });
+
+    // Remove breadcrumb navigation (multiple selector patterns)
     WebImporter.DOMUtils.remove(element, [
       '.ws10-m-with-breadcrumb',
       'nav[aria-label="breadcrumb"]',
+      'nav[aria-label="Navegación"]',
+      'ftol-ficha-breadcrumbs',
+      'mva10-c-breadcrumbs',
     ]);
 
-    // Remove PDP-specific non-content elements (found in PDP captured DOM)
-    // EXTRACTED: Found ul.usp-bar in PDP cleaned.html
-    // EXTRACTED: Found .product-benefits in PDP cleaned.html (USP bar: Pago a plazos, Trae tu móvil, etc.)
-    // EXTRACTED: Found .order-summary in PDP cleaned.html (dynamic order summary section)
-    // EXTRACTED: Found nav[aria-label="Navegación"] in PDP cleaned.html (breadcrumb)
+    // Remove PDP non-content elements
     WebImporter.DOMUtils.remove(element, [
       '.usp-bar',
       '.product-benefits',
       '.order-summary',
-      'nav[aria-label="Navegación"]',
+      'ftol-ficha-legal-conditions',
     ]);
 
-    // Remove carousel UI controls (navigation dots, play button, animation menu)
-    // These are JavaScript-generated UI elements, not content
-    // EXTRACTED: Found ws10-c-carousel__animation-menu, __bullets, __play in captured DOM
+    // Remove carousel UI controls
     WebImporter.DOMUtils.remove(element, [
       '.ws10-c-carousel__animation-menu',
       '.ws10-c-carousel__bullets',
       '.ws10-c-carousel__play',
     ]);
+
+    // Remove tracking pixels and beacon containers
+    element.querySelectorAll('[id^="batBeacon"]').forEach((el) => el.remove());
+    element.querySelectorAll('img[src*="pixel"], img[src*="beacon"], img[src*="tracking"]').forEach((el) => el.remove());
   }
 
   if (hookName === TransformHook.afterTransform) {
     // Clean up tracking and analytics data attributes
-    // EXTRACTED: Found data-analytics-*, data-sq-*, data-vfes-seo-empathy-* in captured DOM
     const allElements = element.querySelectorAll('*');
     allElements.forEach((el) => {
       // Remove Vodafone analytics tracking attributes
@@ -78,7 +115,7 @@ export default function transform(hookName, element, payload) {
       el.removeAttribute('data-initialized');
     });
 
-    // Remove any remaining non-content elements
+    // Final cleanup of any remaining non-content elements
     WebImporter.DOMUtils.remove(element, [
       'noscript',
       'iframe',

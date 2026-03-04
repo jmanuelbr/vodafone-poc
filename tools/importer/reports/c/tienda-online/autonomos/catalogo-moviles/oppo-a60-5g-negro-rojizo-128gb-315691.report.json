@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-a60-5g-negro-rojizo-128gb-315691/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/oppo-a60-5g-negro-rojizo-128gb-315691",
+  "timestamp": "2026-02-24T12:02:26.712Z",
+  "title": "OPPO A60 5G Negro rojizo 128GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "customer-tabs",
+    "customer-tabs",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "cards-pricing",
+    "payment-options",
+    "columns-steps",
+    "columns-steps",
+    "columns",
+    "promo-card",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

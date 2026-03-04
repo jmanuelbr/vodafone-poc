@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-edge-70-5g-gris-512gb-316246/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/motorola-edge-70-5g-gris-512gb-316246",
+  "timestamp": "2026-02-24T12:08:22.597Z",
+  "title": "Motorola Edge 70 5G Gris 512GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

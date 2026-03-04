@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-reno14-5g-con-enco-air-4-verde-512gb-316153/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/oppo-reno14-5g-con-enco-air-4-verde-512gb-316153",
+  "timestamp": "2026-02-24T12:08:46.009Z",
+  "title": "OPPO Reno14 5G con Enco Air 4 Verde 512GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "customer-tabs",
+    "customer-tabs",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "cards-pricing",
+    "payment-options",
+    "columns-steps",
+    "columns-steps",
+    "columns",
+    "promo-card",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

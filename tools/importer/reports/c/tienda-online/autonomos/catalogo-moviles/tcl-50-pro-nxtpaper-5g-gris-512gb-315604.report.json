@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/tcl-50-pro-nxtpaper-5g-gris-512gb-315604/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/tcl-50-pro-nxtpaper-5g-gris-512gb-315604",
+  "timestamp": "2026-02-24T12:04:28.079Z",
+  "title": "TCL 50 Pro NXTPAPER 5G Gris 512GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

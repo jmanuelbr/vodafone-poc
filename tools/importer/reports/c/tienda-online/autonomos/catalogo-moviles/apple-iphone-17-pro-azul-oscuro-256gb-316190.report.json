@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/apple-iphone-17-pro-azul-oscuro-256gb-316190/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/apple-iphone-17-pro-azul-oscuro-256gb-316190",
+  "timestamp": "2026-02-24T11:58:27.891Z",
+  "title": "Apple iPhone 17 Pro Azul oscuro 256GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "customer-tabs",
+    "customer-tabs",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "cards-pricing",
+    "payment-options",
+    "columns-steps",
+    "columns-steps",
+    "columns",
+    "promo-card",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

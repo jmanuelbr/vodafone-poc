@@ -141,8 +141,15 @@ export default function decorate(block) {
         (p) => p.querySelector('a'),
       );
 
+      // Find "La tarifa incluye:" paragraph as fallback boundary
+      const includesParagraph = !featureList && !ctaParagraph
+        ? [...body.querySelectorAll(':scope > p')].find(
+          (p) => /incluye/i.test(p.textContent),
+        )
+        : null;
+
       // Determine boundary element for price box
-      const boundary = featureList || ctaParagraph;
+      const boundary = featureList || ctaParagraph || includesParagraph;
 
       if (boundary) {
         // Create price box wrapper for badge + price + subtext + features
@@ -170,6 +177,9 @@ export default function decorate(block) {
             p.classList.add('cards-pricing-features');
           } else if (idx === 0 && p.querySelector('strong')) {
             p.classList.add('cards-pricing-badge');
+          } else if (idx === 0 && !p.querySelector('strong') && !/€/.test(text)) {
+            // First paragraph without strong/price is the tariff name
+            p.classList.add('cards-pricing-tariff-name');
           }
         });
 

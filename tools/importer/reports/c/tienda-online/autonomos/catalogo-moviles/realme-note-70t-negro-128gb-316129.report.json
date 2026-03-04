@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/realme-note-70t-negro-128gb-316129/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/realme-note-70t-negro-128gb-316129",
+  "timestamp": "2026-02-24T11:56:00.466Z",
+  "title": "Realme Note 70T Negro 128GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

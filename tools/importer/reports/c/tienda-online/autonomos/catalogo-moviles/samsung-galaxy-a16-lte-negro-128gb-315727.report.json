@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-a16-lte-negro-128gb-315727/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-a16-lte-negro-128gb-315727",
+  "timestamp": "2026-02-24T11:55:02.166Z",
+  "title": "Samsung Galaxy A16 LTE Negro 128GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "customer-tabs",
+    "customer-tabs",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "cards-pricing",
+    "payment-options",
+    "columns-steps",
+    "columns-steps",
+    "columns",
+    "promo-card",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

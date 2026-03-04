@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-note-14-4g-negro-medianoche-256gb-315714/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-note-14-4g-negro-medianoche-256gb-315714",
+  "timestamp": "2026-02-24T12:04:10.878Z",
+  "title": "Xiaomi Redmi Note 14 4G Negro Medianoche 256GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

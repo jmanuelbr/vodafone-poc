@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/apple-iphone-17-pro-max-azul-oscuro-256gb-316197/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/apple-iphone-17-pro-max-azul-oscuro-256gb-316197",
+  "timestamp": "2026-02-24T11:58:18.548Z",
+  "title": "Apple iPhone 17 Pro Max Azul oscuro 256GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "customer-tabs",
+    "customer-tabs",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "cards-pricing",
+    "payment-options",
+    "columns-steps",
+    "columns-steps",
+    "columns",
+    "promo-card",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

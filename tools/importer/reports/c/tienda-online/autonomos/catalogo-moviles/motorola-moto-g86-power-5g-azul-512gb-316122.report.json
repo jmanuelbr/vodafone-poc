@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-moto-g86-power-5g-azul-512gb-316122/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/motorola-moto-g86-power-5g-azul-512gb-316122",
+  "timestamp": "2026-02-24T12:04:34.027Z",
+  "title": "Motorola moto g86 power 5G Azul 512GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}
