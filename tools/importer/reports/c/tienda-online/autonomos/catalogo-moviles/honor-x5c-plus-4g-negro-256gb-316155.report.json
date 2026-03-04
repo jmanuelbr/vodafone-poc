@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-x5c-plus-4g-negro-256gb-316155/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/honor-x5c-plus-4g-negro-256gb-316155",
+  "timestamp": "2026-02-24T12:01:17.616Z",
+  "title": "HONOR X5C Plus 4G Negro 256GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "customer-tabs",
+    "customer-tabs",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "cards-pricing",
+    "payment-options",
+    "columns-steps",
+    "columns-steps",
+    "columns",
+    "promo-card",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

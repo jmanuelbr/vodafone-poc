@@ -57,7 +57,6 @@
   background-color: var(--color-teal);
   color: var(--color-white);
   font-size: 14px;
-  font-weight: 700;
   line-height: 18px;
   padding: 4px 20px;
   border-radius: 12px 12px 0 0;
@@ -90,7 +89,6 @@
   background-color: var(--color-red);
   color: var(--color-white);
   font-size: 14px;
-  font-weight: 700;
   line-height: 18px;
   padding: 4px 20px;
   border-radius: 12px 12px 0 0;
@@ -129,6 +127,23 @@
   margin: 0;
   font-size: 16px;
   line-height: 22px;
+}
+
+/* Tariff name inside price box */
+.cards-pricing .cards-pricing-price-box > p.cards-pricing-tariff-name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--color-black);
+  margin-bottom: 4px;
+}
+
+/* "La tarifa incluye:" text after price box */
+.cards-pricing .cards-pricing-card-body > p:first-of-type:not(:last-child) {
+  font-size: 14px;
+  color: var(--color-grey-5);
+  line-height: 20px;
+  margin: 0;
 }
 
 /* Badge line (e.g., "Tarifa recomendada", "Oferta exclusiva web -16%") */
@@ -285,8 +300,8 @@
 }
 
 .cards-pricing .cards-pricing-card-body > p:last-child a:last-child:hover {
-  background-color: var(--color-teal-hover, #005566);
-  border-color: var(--color-teal-hover, #005566);
+  background-color: var(--color-teal-hover, #056);
+  border-color: var(--color-teal-hover, #056);
 }
 
 /* Highlighted card ("La más vendida") - black price box */
@@ -300,6 +315,7 @@
   color: var(--color-white);
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .cards-pricing > ul > li.highlighted .cards-pricing-price-box > p {
   color: var(--color-white);
 }

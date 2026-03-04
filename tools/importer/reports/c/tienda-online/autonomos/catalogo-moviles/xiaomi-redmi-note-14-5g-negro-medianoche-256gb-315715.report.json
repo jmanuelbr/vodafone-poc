@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-note-14-5g-negro-medianoche-256gb-315715/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-note-14-5g-negro-medianoche-256gb-315715",
+  "timestamp": "2026-02-24T12:05:05.542Z",
+  "title": "Xiaomi Redmi Note 14 5G Negro Medianoche 256GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "customer-tabs",
+    "customer-tabs",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "cards-pricing",
+    "payment-options",
+    "columns-steps",
+    "columns-steps",
+    "columns",
+    "promo-card",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

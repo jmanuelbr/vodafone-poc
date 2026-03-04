@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-edge-50-fusion-5g-azul-256gb-315508/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/motorola-edge-50-fusion-5g-azul-256gb-315508",
+  "timestamp": "2026-02-24T12:07:17.471Z",
+  "title": "Motorola Edge 50 Fusion 5G Azul 256GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "customer-tabs",
+    "customer-tabs",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "cards-pricing",
+    "payment-options",
+    "columns-steps",
+    "columns-steps",
+    "columns",
+    "promo-card",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

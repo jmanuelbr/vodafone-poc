@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-a5-5g-verde-128gb-316111/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/oppo-a5-5g-verde-128gb-316111",
+  "timestamp": "2026-02-24T11:57:22.878Z",
+  "title": "OPPO A5 5G Verde 128GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "customer-tabs",
+    "customer-tabs",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "cards-pricing",
+    "payment-options",
+    "columns-steps",
+    "columns-steps",
+    "columns",
+    "promo-card",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

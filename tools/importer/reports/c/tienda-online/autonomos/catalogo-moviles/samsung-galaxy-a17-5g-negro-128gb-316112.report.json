@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-a17-5g-negro-128gb-316112/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-a17-5g-negro-128gb-316112",
+  "timestamp": "2026-02-24T11:55:43.747Z",
+  "title": "Samsung Galaxy A17 5G Negro 128GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "customer-tabs",
+    "customer-tabs",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "cards-pricing",
+    "payment-options",
+    "columns-steps",
+    "columns-steps",
+    "columns",
+    "promo-card",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

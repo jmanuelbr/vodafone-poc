@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-400-smart-5g-negro-128gb-316107/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/honor-400-smart-5g-negro-128gb-316107",
+  "timestamp": "2026-02-24T12:01:10.467Z",
+  "title": "HONOR 400 Smart 5G Negro 128GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

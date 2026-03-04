@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/tcl-onetouch-4042s-gris-oscuro-128gb-315193/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/tcl-onetouch-4042s-gris-oscuro-128gb-315193",
+  "timestamp": "2026-02-24T12:00:49.322Z",
+  "title": "TCL onetouch 4042S Gris oscuro 128GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "customer-tabs",
+    "customer-tabs",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "cards-pricing",
+    "payment-options",
+    "columns-steps",
+    "columns-steps",
+    "columns",
+    "promo-card",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

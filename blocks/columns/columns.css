@@ -22,7 +22,7 @@
   display: block;
 }
 
-/* 2-col text+image: constrain decorative image size */
+/* 2-col text+image: image column */
 .columns-2-cols > div > .columns-img-col {
   display: flex;
   align-items: center;
@@ -30,8 +30,9 @@
 }
 
 .columns-2-cols > div > .columns-img-col img {
-  width: auto;
-  max-height: 80px;
+  width: 100%;
+  max-height: 280px;
+  object-fit: contain;
   border-radius: 0;
 }
 

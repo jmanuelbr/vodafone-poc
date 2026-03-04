@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-moto-g55-5g-verde-256gb-315704/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/motorola-moto-g55-5g-verde-256gb-315704",
+  "timestamp": "2026-02-24T12:03:54.003Z",
+  "title": "Motorola moto g55 5G Verde 256GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

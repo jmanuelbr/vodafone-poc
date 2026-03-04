@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-edge-60-pro-5g-verde-512gb-315952/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/motorola-edge-60-pro-5g-verde-512gb-315952",
+  "timestamp": "2026-02-24T12:08:13.870Z",
+  "title": "Motorola Edge 60 Pro 5G Verde 512GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "customer-tabs",
+    "customer-tabs",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "cards-pricing",
+    "payment-options",
+    "columns-steps",
+    "columns-steps",
+    "columns",
+    "promo-card",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

@@ -179,59 +179,183 @@
         "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-note-15-pro-5g-negro-256gb-316376/",
         "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-a56-5g-negro-256gb-315792/",
         "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-a6-pro-5g-negro-azul-256gb-316284/",
-        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-reno-14-fs-5g-verde-512gb-316150/"
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-reno-14-fs-5g-verde-512gb-316150/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-a16-lte-negro-128gb-315727/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/apple-iphone-17-negro-256gb-316127/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-s25-5g-gris-256gb-315753/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-a5-medianoche-128gb-315945/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-note-15-5g-negro-256gb-316375/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-a17-5g-negro-128gb-316112/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-15t-5g-negro-256gb-316116/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/realme-note-70t-negro-128gb-316129/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-s25-ultra-5g-negro-512gb-315756/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-15t-pro-5g-negro-512gb-316117/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-z-fold7-negro-256gb-316097/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-z-flip7-negro-256gb-316093/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/apple-iphone-air-negro-espacial-256gb-316166/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-magic-8-lite-5g-negro-512gb-316351/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/vivo-x300-pro-5g-arena-512gb-316238/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-a5-5g-verde-128gb-316111/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-moto-g05-4g-con-nfc-verde-128gb-316154/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-15c-5g-negro-256gb-316114/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-moto-g35-5g-gris-128gb-315705/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-s25-fe-5g-negro-256gb-316134/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-moto-g56-5g-negro-512gb-316121/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/apple-iphone-17-pro-max-azul-oscuro-256gb-316197/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/apple-iphone-17-pro-azul-oscuro-256gb-316190/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/apple-iphone-16-negro-128gb-315640/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/apple-iphone-16-pro-max-titanio-negro-512gb-315675/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/apple-iphone-16-pro-titanio-negro-128gb-315655/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/apple-iphone-16-plus-negro-256gb-315638/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/apple-iphone-16e-negro-128gb-315868/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/apple-iphone-15-negro-128gb-315201/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/vivo-y29s-negro-256gb-316061/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/realme-14-5g-con-watch-5-negro-256gb-316138/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-400-medianoche-512gb-315943/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/tcl-60r-5g-gris-128gb-316360/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/realme-14x-5g-negro-256gb-315760/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-note-14-pro-plus-5g-negro-medianoche-512gb-315717/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/tcl-onetouch-4043-4g-negro-128gb-315464/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/tcl-onetouch-4042s-gris-oscuro-128gb-315193/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/adoc-sc01-4g-negro-128mb-315176/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/zte-blade-a55-negro-64gb-315701/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-400-smart-5g-negro-128gb-316107/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-x5c-plus-4g-negro-256gb-316155/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-400-lite-negro-256gb-315942/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-a5-4g-morado-128gb-316252/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-a3-negro-128gb-315484/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/realme-note-60-negro-128gb-315784/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-moto-g05-4g-verde-128gb-315785/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-13c-medianoche-256gb-316139/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-400-smart-5g-con-honor-choice-earbuds-x7-lite-negro-128gb-316108/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-a60-5g-negro-rojizo-128gb-315691/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-x6b-4g-negro-128gb-315698/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-a05s-negro-128gb-315425/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/tcl-60-5g-gris-espacial-256gb-316072/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/realme-c61-verde-256gb-315544/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-14c-negro-128gb-315874/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-200-smart-5g-negro-256gb-315601/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/tcl-60-se-nxtpaper-5g-gris-espacial-256gb-315944/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/vivo-y19s-negro-brillante-256gb-315900/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-15-5g-negro-256gb-316118/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-moto-g55-5g-verde-256gb-315704/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-a80-5g-negro-256gb-315600/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-note-14-4g-negro-medianoche-256gb-315714/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-a16-5g-negro-128gb-315696/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/tcl-50-pro-nxtpaper-5g-gris-512gb-315604/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-moto-g86-power-5g-azul-512gb-316122/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-moto-g75-5g-negro-256gb-315703/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-a5-pro-5g-negro-marron-256gb-315946/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-reno13-f-5g-gris-grafito-256gb-315844/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-note-14-5g-negro-medianoche-256gb-315715/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-a25-5g-negro-128gb-315428/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-a26-5g-negro-128gb-315788/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/vivo-y31-5g-negro-512gb-316285/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/zte-nubia-neo-5g-con-zte-buds-2-negro-256gb-315402/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-note-14-pro-5g-negro-medianoche-256gb-315716/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/tcl-nxtpaper-70-pro-5g-azul-512gb-316358/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/realme-14-5g-negro-256gb-315918/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-200-lite-5g-azul-256gb-315564/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-400-con-honor-choice-earbuds-clip-medianoche-512gb-316014/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/vivo-v50-lite-5g-negro-512gb-315901/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-edge-60-5g-azul-512gb-315951/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-magic7-lite-5g-negro-512gb-315751/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-edge-50-fusion-5g-azul-256gb-315508/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/realme-14-5g-con-watch-s2-negro-256gb-315920/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/realme-14-pro-5g-gris-512gb-316110/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-redmi-note-15-pro-plus-5g-negro-256gb-316416/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-reno14-fs-5g-con-enco-buds3-pro-verde-512gb-316151/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-a55-5g-negro-256gb-315506/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/tcl-nxtpaper-60-ultra-5g-negro-512gb-316260/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-edge-60-pro-5g-verde-512gb-315952/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-edge-70-5g-gris-512gb-316246/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-reno13-5g-azul-256gb-315837/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-reno-14-5g-verde-512gb-316152/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-reno14-5g-con-enco-air-4-verde-512gb-316153/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-200-5g-negro-512gb-315563/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-edge-50-pro-5g-negro-512gb-315507/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/realme-gt-7t-5g-negro-512gb-316058/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-s24-fe-5g-negro-256gb-315693/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-s24-5g-negro-256gb-315431/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-find-x9-5g-space-black-512gb-316158/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-s25-fe-5g-con-buds3-fe-negro-256gb-316160/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-15-5g-negro-512gb-315851/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-find-x9-pro-5g-titanium-charcoal-512gb-316157/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-s25-plus-5g-gris-256gb-315754/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-s24-plus-5g-negro-256gb-315433/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/motorola-razr-60-ultra-5g-rojo-512gb-315950/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-s25-edge-5g-negro-titanio-256gb-315926/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/xiaomi-15-ultra-5g-plata-cromada-512gb-315852/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-magic-v5-5g-negro-512gb-316133/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-magic-v3-5g-verde-512gb-315694/",
+        "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/samsung-galaxy-s24-ultra-5g-con-galaxy-watch7-y-galaxy-buds3-negro-1tb-315599/"
       ],
       "description": "Vodafone product detail page (PDP) for mobile phones with product gallery, tariff pricing cards, payment options, purchase process steps, promotions, and specifications accordion",
       "blocks": [
         {
           "name": "product-gallery",
-          "instances": [".product-gallery"]
+          "instances": [
+            ".mva10-c-image-gallery",
+            "ftol-ficha-image-gallery"
+          ]
         },
         {
           "name": "customer-tabs",
-          "instances": [".tariff-tabs"]
+          "instances": [
+            "ftol-register-type-tabs",
+            "mva10-c-tabs-simple"
+          ]
         },
         {
           "name": "tariff-filter",
-          "instances": [".tariff-types"]
+          "instances": [
+            "ftol-selector-tarifa",
+            "mva10-c-filter"
+          ]
         },
         {
           "name": "cards-pricing",
-          "instances": [".tariff-card"]
+          "instances": [
+            "ftol-tarifa-cards"
+          ]
         },
         {
           "name": "payment-options",
-          "instances": [".payment-options"]
+          "instances": [
+            "ftol-price-contado-plazos"
+          ]
         },
         {
           "name": "columns-steps",
-          "instances": ["section:has(.payment-plans) ol"]
+          "instances": [
+            "ftol-time-line-two-step-sales",
+            "mva10-c-timeline-steps"
+          ]
         },
         {
           "name": "columns",
-          "instances": ["section:has(img[alt='charity-giving'])"]
+          "instances": [
+            "ftol-no-surprises-two-step-sales"
+          ]
         },
         {
           "name": "promo-card",
-          "instances": [".promo-card"]
+          "instances": [
+            "ftol-ficha-promotions"
+          ]
         },
         {
           "name": "accordion",
-          "instances": ["section:has(table)"]
-        },
-        {
-          "name": "section-transparency",
-          "instances": ["section:has(img[alt='charity-giving'])"],
-          "section": ""
-        },
-        {
-          "name": "section-promotions",
-          "instances": ["section:has(.promo-card)"],
-          "section": ""
+          "instances": [
+            "ftol-ficha-characteristics",
+            "mva10-c-accordion"
+          ]
         },
         {
           "name": "section-product-details",
-          "instances": ["section:has(table)"],
+          "instances": [
+            "ftol-ficha-characteristics"
+          ],
           "section": ""
         }
       ]

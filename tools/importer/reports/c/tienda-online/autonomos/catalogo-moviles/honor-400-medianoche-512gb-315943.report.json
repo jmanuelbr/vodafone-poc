@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-400-medianoche-512gb-315943/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/honor-400-medianoche-512gb-315943",
+  "timestamp": "2026-02-24T11:59:42.932Z",
+  "title": "HONOR 400 Medianoche 512GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

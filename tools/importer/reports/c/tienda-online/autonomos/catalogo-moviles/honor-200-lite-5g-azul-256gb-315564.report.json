@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/honor-200-lite-5g-azul-256gb-315564/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/honor-200-lite-5g-azul-256gb-315564",
+  "timestamp": "2026-02-24T12:06:33.284Z",
+  "title": "HONOR 200 Lite 5G Azul 256GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

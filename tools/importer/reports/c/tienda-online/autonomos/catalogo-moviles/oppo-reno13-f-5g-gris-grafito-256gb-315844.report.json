@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/oppo-reno13-f-5g-gris-grafito-256gb-315844/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/oppo-reno13-f-5g-gris-grafito-256gb-315844",
+  "timestamp": "2026-02-24T12:04:58.474Z",
+  "title": "OPPO Reno13 F 5G Gris grafito 256GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}

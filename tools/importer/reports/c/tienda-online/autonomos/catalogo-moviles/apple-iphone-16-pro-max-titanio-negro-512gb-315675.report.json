@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://www.vodafone.es/c/tienda-online/autonomos/catalogo-moviles/apple-iphone-16-pro-max-titanio-negro-512gb-315675/",
+  "path": "c/tienda-online/autonomos/catalogo-moviles/apple-iphone-16-pro-max-titanio-negro-512gb-315675",
+  "timestamp": "2026-02-24T11:58:46.082Z",
+  "title": "Apple iPhone 16 Pro Max Titanio negro 512GB ¡al mejor precio! para empresas",
+  "template": "product-detail-page",
+  "blocks": [
+    "product-gallery",
+    "product-gallery",
+    "customer-tabs",
+    "customer-tabs",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "tariff-filter",
+    "cards-pricing",
+    "payment-options",
+    "columns-steps",
+    "columns-steps",
+    "columns",
+    "promo-card",
+    "accordion",
+    "accordion",
+    "accordion"
+  ]
+}
